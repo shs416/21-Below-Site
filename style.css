@@ -26,9 +26,16 @@
 #RESPONSIVE DESIGN
 */
 
+@import url('https://fonts.googleapis.com/css?family=Concert+One|Raleway');
+
+/*
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Concert One', cursive;
+*/
+
 body {
   background-color: #ffffff;
-  font-family: "Prata", serif;
+  font-family: 'Raleway', sans-serif;
   color: #333333;
   font-size: 15px;
   overflow-x: hidden;
@@ -57,13 +64,12 @@ a:focus {
   text-decoration: none;
 }
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
-  font-family: "Open Sans", sans-serif;
 }
 
 h2 {
@@ -80,7 +86,6 @@ img {
 
 .mu-readmore-btn {
   background-color: #fff;
-  font-family: "Open Sans", sans-serif;
   display: inline-block;
   font-size: 16px;
   padding: 15px 35px;
@@ -106,12 +111,12 @@ img {
   transition: all 0.2s;
 }
 
-.mu-readmore-btn:hover, 
+.mu-readmore-btn:hover,
 .mu-readmore-btn:focus {
   color: #fff;
 }
 
-.mu-readmore-btn:hover::after, 
+.mu-readmore-btn:hover::after,
 .mu-readmore-btn:focus::after {
   bottom: 0px;
   content: "";
@@ -135,7 +140,7 @@ img {
   transition: all 0.5s;
 }
 
-.mu-browsmore-btn:hover, 
+.mu-browsmore-btn:hover,
 .mu-browsmore-btn:focus {
   color: #fff;
 }
@@ -153,7 +158,7 @@ img {
   transition: all 0.5s;
 }
 
-.mu-send-btn:hover, 
+.mu-send-btn:hover,
 .mu-send-btn:focus {
   color: #fff;
 }
@@ -166,7 +171,7 @@ img {
 #mu-header {
   background-color: #fff;
   border-bottom: 1px solid #ddd;
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   right: 0;
@@ -190,9 +195,13 @@ img {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
+@media (max-width: 991.98px) {
+.mu-main-navbar {
+
+}
+}
 
 .mu-main-navbar .mu-main-nav {
-  font-family: "Open Sans", sans-serif;
 }
 
 .mu-main-navbar .mu-main-nav li a {
@@ -217,7 +226,7 @@ img {
   color: #333;
   display: inline-block;
   font-weight: 700;
-  font-size: 35px;  
+  font-size: 35px;
   padding: 0;
   margin-top: 16px;
   height: 34px;
@@ -230,7 +239,35 @@ img {
 }
 
 .mu-main-navbar .navbar-header .navbar-brand img {
+  margin-top: -15px;
+  height: 50px !important;
+  position: absolute;
+}
+
+@media (max-width: 991.98px) {
+  .mu-main-navbar .navbar-header .navbar-brand img {
+    display: none;
+  }
+}
+
+
+
+
+.mu-main-navbar .navbar-header .navbar-brand span {
+  position: absolute;
+  margin-left: 80px;
   margin-top: -10px;
+  font-size: .9em;
+  font-family: 'Concert One', cursive;
+  color: black !important;
+}
+
+@media (max-width: 991.98px) {
+  .mu-main-navbar .navbar-header .navbar-brand span {
+    margin-left:0;
+    font-size: .7em;
+    margin-top: -15px;
+  }
 }
 
 
@@ -244,8 +281,8 @@ img {
   margin-top: -4px;
 }
 
-.navbar-default .navbar-nav > .active > a, 
-.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   background-color: transparent;
 }
@@ -293,9 +330,9 @@ img {
 }
 
 .mu-slider-area {
-  display: inline;
-  float: left;
-  width: 100%;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .mu-top-slider {
@@ -305,14 +342,18 @@ img {
 }
 
 .mu-top-slider-single {
-  display: inline;
+  background-color: red;
   float: left;
   position: relative;
   width: 100%;
+  height: 589px;
+  overflow: hidden;
+  text-align: center;
+  display:inline-block;
 }
 
 .mu-top-slider .mu-top-slider-single:after {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.0);
   bottom: 0;
   content: "";
   left: 0;
@@ -323,8 +364,17 @@ img {
 }
 
 .mu-top-slider .mu-top-slider-single img {
-  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%; transform: translate(-50%,0);
+  min-width: 100%;
+  height: 589px;
+  max-width: none;
+  text-align: center;
+  margin: 0 auto;
+
 }
+
 
 .mu-top-slider .mu-top-slider-single .mu-top-slider-content {
   position: absolute;
@@ -336,7 +386,6 @@ img {
 }
 
 .mu-top-slider .mu-top-slider-single .mu-top-slider-content .mu-slider-small-title {
-  font-family: "Tangerine", cursive;
   font-size: 100px;
   font-weight: 400;
   line-height: 40px;
@@ -358,12 +407,10 @@ img {
 
 .mu-top-slider .slick-prev::before {
   content: "\f177";
-  font-family: fontAwesome;
 }
 
 .mu-top-slider .slick-next::before {
   content: "\f178";
-  font-family: fontAwesome;
 }
 
 .mu-top-slider .slick-prev,
@@ -385,14 +432,14 @@ img {
   color: #888;
 }
 
-.mu-top-slider .slick-prev:hover, 
+.mu-top-slider .slick-prev:hover,
 .mu-top-slider .slick-prev:focus,
 .mu-top-slider .slick-next:hover,
 .mu-top-slider .slick-next:focus {
   color: #fff;
 }
 
-.mu-top-slider .slick-prev:hover::before, 
+.mu-top-slider .slick-prev:hover::before,
 .mu-top-slider .slick-prev:focus::before,
 .mu-top-slider .slick-next:hover::before,
 .mu-top-slider .slick-next:focus::before {
@@ -469,7 +516,6 @@ img {
 
 .mu-about-us-right ul li:before {
   content: "\f0da";
-  font-family: fontAwesome;
   margin-right: 10px;
 }
 
@@ -492,7 +538,6 @@ img {
 
 .mu-title .mu-subtitle {
   font-size: 50px;
-  font-family: "Tangerine", cursive;
   line-height: 30px;
 }
 
@@ -553,7 +598,6 @@ img {
 }
 
 .mu-counter-nav li .mu-single-counter span {
-  font-family: "Tangerine", cursive;
   font-size: 40px;
 }
 
@@ -566,7 +610,6 @@ img {
 }
 
 .mu-counter-nav li .mu-single-counter h3 span {
-  font-family: "Open Sans", sans-serif;
   font-size: 35px;
   font-weight: bold;
   line-height: 40px;
@@ -621,7 +664,6 @@ img {
 }
 
 .mu-restaurant-menu li a {
-  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   border-radius: 0;
   color: #fff;
@@ -851,18 +893,18 @@ RESERVATION SECTION
   padding: 6px 10px;
 }
 
-.datepicker .datepicker-switch, 
-.datepicker .prev, 
-.datepicker .next, 
+.datepicker .datepicker-switch,
+.datepicker .prev,
+.datepicker .next,
 .datepicker tfoot tr th {
   font-size: 20px;
 }
 
-.table-condensed > thead > tr > th, 
-.table-condensed > tbody > tr > th, 
-.table-condensed > tfoot > tr > th, 
-.table-condensed > thead > tr > td, 
-.table-condensed > tbody > tr > td, 
+.table-condensed > thead > tr > th,
+.table-condensed > tbody > tr > th,
+.table-condensed > tfoot > tr > th,
+.table-condensed > thead > tr > td,
+.table-condensed > tbody > tr > td,
 .table-condensed > tfoot > tr > td {
   padding: 6px;
 }
@@ -888,7 +930,6 @@ RESERVATION SECTION
 }
 
 .mu-opening-hour h2 {
-  font-family: "Tangerine", cursive;
   font-size: 50px;
   margin: 10px 15px 20px;
   padding-bottom: 15px;
@@ -969,7 +1010,7 @@ RESERVATION SECTION
 }
 
 .mu-single-gallery .mu-single-gallery-item .mu-single-gallery-img img {
-  
+
   -webkit-transition: all 0.8s;
   -moz-transition: all 0.8s;
   -ms-transition: all 0.8s;
@@ -1072,7 +1113,6 @@ RESERVATION SECTION
 
 .mu-testimonial-slider li .mu-testimonial-single .mu-testimonial-info p:before {
   content: '\f10e';
-  font-family: fontAwesome;
   font-size: 50px;
   left: 1%;
   position: absolute;
@@ -1099,7 +1139,6 @@ RESERVATION SECTION
   display: inline-block;
   font-size: 18px;
   font-weight: bold;
-  font-family: "Open Sans", sans-serif;
   letter-spacing: 1px;
   margin-bottom: 0;
   min-width: 175px;
@@ -1243,7 +1282,7 @@ RESERVATION SECTION
   transition: all 0.5s;
 }
 
-.mu-chef-nav .slick-list li .mu-single-chef .mu-single-chef-social a:hover, 
+.mu-chef-nav .slick-list li .mu-single-chef .mu-single-chef-social a:hover,
 .mu-chef-nav .slick-list li .mu-single-chef .mu-single-chef-social a:focus {
   color: #fff;
 }
@@ -1299,7 +1338,6 @@ RESERVATION SECTION
 .mu-contact-left {
   display: inline;
   float: left;
-  font-family: "Open Sans", sans-serif;
   width: 100%;
 }
 
@@ -1477,7 +1515,6 @@ RESERVATION SECTION
 }
 
 .mu-footer-copyright p {
-  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   letter-spacing: 0.5px;
   color: #fff;
@@ -1531,7 +1568,7 @@ RESERVATION SECTION
   padding-top: 26%;
   }
 
-  
+
 }
 
 
@@ -1552,11 +1589,11 @@ RESERVATION SECTION
   .mu-reservation-form {
     text-align: center;
   }
-  
+
   .mu-reservation-right {
     margin-top: 60px;
   }
-  
+
   #mu-contact .mu-contact-area .mu-contact-content .mu-contact-right {
     margin-top: 50px;
     padding: 0;
@@ -1586,9 +1623,10 @@ RESERVATION SECTION
 
   .navbar-default .navbar-toggle {
     border-radius: 0px;
+    margin-top: 0;
   }
 
-  .navbar-default .navbar-toggle:hover, 
+  .navbar-default .navbar-toggle:hover,
   .navbar-default .navbar-toggle:focus {
     background-color: #fff;
   }
@@ -1598,7 +1636,7 @@ RESERVATION SECTION
     text-align: center;
   }
 
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, 
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     background-color: #fff;
   }
@@ -1608,13 +1646,13 @@ RESERVATION SECTION
     margin-bottom: 10px;
     border-right: none;
   }
-   
+
 }
 
 
 @media (max-width: 640px) {
-  
-  .navbar-default .navbar-toggle:hover, 
+
+  .navbar-default .navbar-toggle:hover,
   .navbar-default .navbar-toggle:focus {
     background-color: #fff;
   }
@@ -1654,7 +1692,7 @@ RESERVATION SECTION
 
   .mu-top-slider .slick-dots {
     display: none !important;
-  } 
+  }
 
   .mu-top-slider .mu-top-slider-single .mu-top-slider-content .mu-slider-small-title {
     font-size: 45px;
@@ -1685,7 +1723,7 @@ RESERVATION SECTION
   .mu-top-slider .mu-top-slider-single .mu-top-slider-content p {
     display: none;
   }
- 
+
   .mu-reservation-content p {
     padding: 0;
   }
@@ -1728,8 +1766,8 @@ RESERVATION SECTION
   #mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-restaurant-menu li {
     margin-bottom: 10px;
   }
-  
-  
+
+
 }
 
 @media (max-width: 360px) {
@@ -1773,7 +1811,7 @@ RESERVATION SECTION
     font-size: 16px;
     line-height: 24px;
   }
-  
+
   #mu-contact .mu-contact-area .mu-contact-content .mu-contact-right {
     text-align: center;
   }
@@ -1831,5 +1869,22 @@ RESERVATION SECTION
     padding-top: 25.5%;
   }
 
-  
+
+}
+
+
+
+/* This is where raymond worked */
+.page-container {
+  margin-top: 100px;
+}
+@media (max-width: 991.98px) {
+  .page-container {
+    margin-top: 120px;
+  }
+}
+
+.mb-3 {
+
+  font-family: 'Concert One', cursive;
 }
