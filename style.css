@@ -331,7 +331,7 @@ img {
 
 .mu-slider-area {
   display: block;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -459,7 +459,8 @@ img {
 }
 
 .mu-top-slider .slick-dots li button {
-  border-radius: 50%;
+  border-radius: 30%;
+  border-color: white;
 }
 
 .mu-top-slider .slick-dots li button::before {
@@ -472,6 +473,7 @@ img {
 }
 
 .mu-top-slider .slick-dots li.slick-active button::before {
+  background-color: white;
   color: transparent;
   border-radius: 50%;
   opacity: 1;
@@ -539,6 +541,8 @@ img {
 .mu-title .mu-subtitle {
   font-size: 50px;
   line-height: 30px;
+  font-family: 'Concert One', cursive;
+  text-transform: uppercase;
 }
 
 .mu-title h2 {
@@ -562,7 +566,7 @@ img {
 }
 
 .mu-counter-overlay {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(10,204,199, 1);
   display: inline;
   padding: 100px 0;
   float: left;
@@ -590,11 +594,48 @@ img {
 
 .mu-counter-nav li .mu-single-counter {
   color: #fff;
+
   display: inline;
   float: left;
   padding: 25px 0;
   text-align: center;
   width: 100%;
+}
+
+.mu-counter-nav li .mu-single-counter .title {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-family: 'Concert One', cursive;
+}
+
+.mu-counter-nav li .mu-single-counter .description {
+  font-size: 1.3em !important;
+}
+.mu-counter-nav li .mu-single-counter .description .counter-value {
+  font-size: 1.3em;
+}
+
+
+
+.mu-counter-nav li .mu-single-counter .menuImage {
+  height: 200px;
+  width: 70%;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  margin: 10px auto;
+}
+
+.mu-counter-nav li .mu-single-counter .menuImage img {
+
+  position: absolute;
+  top: 0;
+  left: 50%; transform: translate(-50%,0);
+  min-width: 100%;
+  height: 200px;
+  max-width: none;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .mu-counter-nav li .mu-single-counter span {
@@ -1008,9 +1049,28 @@ RESERVATION SECTION
   overflow: hidden;
   width: 100%;
 }
+.mu-single-gallery .mu-single-gallery-item .mu-single-gallery-img a {
+  display: block;
+  text-align: center;
+}
+
+.mu-single-gallery .mu-single-gallery-item .mu-single-gallery-img .heading {
+  letter-spacing: 4px;
+  margin-top: 15px;
+  font-family: 'Concert One', cursive;
+  font-size: 2em;
+  height: auto;
+}
+
+.mu-single-gallery .mu-single-gallery-item .mu-single-gallery-img .description {
+  margin-top: 20px;
+  font-size: 1.3em;
+  height: auto;
+}
 
 .mu-single-gallery .mu-single-gallery-item .mu-single-gallery-img img {
-
+  width: 40%;
+  margin: 0 auto;
   -webkit-transition: all 0.8s;
   -moz-transition: all 0.8s;
   -ms-transition: all 0.8s;
@@ -1050,7 +1110,7 @@ RESERVATION SECTION
 }
 
 #mu-client-testimonial .mu-overlay {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(10,204,199, 1);
   display: inline;
   float: left;
   padding: 70px 0 100px;
