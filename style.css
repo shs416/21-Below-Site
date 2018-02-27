@@ -539,7 +539,7 @@ img {
 }
 
 .mu-title .mu-subtitle {
-  font-size: 50px;
+  font-size: 2.5em;
   line-height: 30px;
   font-family: 'Concert One', cursive;
   text-transform: uppercase;
@@ -609,10 +609,10 @@ img {
 }
 
 .mu-counter-nav li .mu-single-counter .description {
-  font-size: 1.3em !important;
+  font-size: 1em !important;
 }
 .mu-counter-nav li .mu-single-counter .description .counter-value {
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 
@@ -1023,7 +1023,8 @@ RESERVATION SECTION
 .mu-single-gallery {
   display: inline;
   float: left;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 50px;
   width: 33.33%;
 }
 
@@ -1052,24 +1053,33 @@ RESERVATION SECTION
 .mu-single-gallery .mu-single-gallery-item .mu-single-gallery-img a {
   display: block;
   text-align: center;
+  text-decoration: none;
+}
+
+.mu-imglink:hover{
+  text-decoration: none;
+  color: black;
 }
 
 .mu-single-gallery .mu-single-gallery-item .mu-single-gallery-img .heading {
-  letter-spacing: 4px;
+
   margin-top: 15px;
   font-family: 'Concert One', cursive;
-  font-size: 2em;
+  font-size: 1.5em;
   height: auto;
 }
 
 .mu-single-gallery .mu-single-gallery-item .mu-single-gallery-img .description {
   margin-top: 20px;
-  font-size: 1.3em;
+  font-size: 1em;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
   height: auto;
 }
 
 .mu-single-gallery .mu-single-gallery-item .mu-single-gallery-img img {
-  width: 40%;
+  width: 30%;
   margin: 0 auto;
   -webkit-transition: all 0.8s;
   -moz-transition: all 0.8s;
@@ -1528,7 +1538,7 @@ RESERVATION SECTION
 ====================*/
 
 #mu-footer {
-  background-color: #444;
+  background-color: #0accc7;
   display: inline;
   float: left;
   padding: 50px 0;
@@ -1551,9 +1561,9 @@ RESERVATION SECTION
 }
 
 .mu-footer-social a {
-  background-color: #555;
+  background-color: white;
   border-radius: 50%;
-  color: #fff;
+  color: #0accc7;
   display: inline-block;
   font-size: 20px;
   height: 45px;
