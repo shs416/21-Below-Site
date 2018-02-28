@@ -506,6 +506,11 @@ img {
   width: 100%;
 }
 
+.col-md-6 p, .col-lg-6 p {
+  color: rgba(69,69,69,.6);
+}
+
+
 .mu-about-us-right ul {
   margin-bottom: 20px;
   padding-left: 25px;
@@ -609,19 +614,21 @@ img {
 }
 
 .mu-counter-nav li .mu-single-counter .description {
-  font-size: 1em !important;
+  width: 70%;
+  margin: 0 auto;
+  font-size: .9em !important;
 }
 .mu-counter-nav li .mu-single-counter .description .counter-value {
-  font-size: 1em;
+  font-size: .9em;
 }
 
 
 
 .mu-counter-nav li .mu-single-counter .menuImage {
   height: 200px;
-  width: 70%;
+  width: 200px;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 50%;
   position: relative;
   margin: 10px auto;
 }
@@ -1071,7 +1078,8 @@ RESERVATION SECTION
 
 .mu-single-gallery .mu-single-gallery-item .mu-single-gallery-img .description {
   margin-top: 20px;
-  font-size: 1em;
+  color: rgba(69,69,69,.6);
+  font-size: .9em;
   width: 60%;
   margin-left: auto;
   margin-right: auto;
@@ -1494,7 +1502,7 @@ RESERVATION SECTION
 }
 
 .success {
-  padding: 1em;
+  padding: .9em;
   margin-bottom: 0.75rem;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   color: #468847;
@@ -1506,7 +1514,7 @@ RESERVATION SECTION
 }
 
 .error {
-  padding: 1em;
+  padding: .9em;
   margin-bottom: 0.75rem;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   color: #b94a48;
@@ -1585,7 +1593,7 @@ RESERVATION SECTION
 }
 
 .mu-footer-copyright p {
-  font-size: 16px;
+  font-size: .9em;
   letter-spacing: 0.5px;
   color: #fff;
 }
@@ -1947,6 +1955,7 @@ RESERVATION SECTION
 /* This is where raymond worked */
 .page-container {
   margin-top: 100px;
+  min-height: 100vh;
 }
 @media (max-width: 991.98px) {
   .page-container {
