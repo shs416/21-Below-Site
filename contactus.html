@@ -50,6 +50,24 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+<script type="text/javascript"> 
+  var thedate = new Date(); 
+  var dayofweek = thedate.getUTCDay(); 
+  var hourofday = thedate.getUTCHours() - 8; 
+  function onAir() { 
+
+  // MON-THURS: 7-9
+  // FRI & SAT: 6-10
+  // SUN: 8-10
+  if ((dayofweek >= 1 && dayofweek <= 4) && ((hourofday >= 7 && hourofday <= 9))
+      || ((dayofweek >= 5 && dayofweek <= 6) && (hourofday >= 6 && hourofday <= 10))
+      || ((dayofweek == 0) && (hourofday >= 8 && hourofday <= 10))) { 
+    return true; 
+  } 
+  
+  return false; } 
+</script>
+
   </head>
   <body>
 
@@ -124,7 +142,8 @@
           <!-- Embedded Google Map -->
 <!--           <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe> -->
 
-          <iframe width="100%" height="400px" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ-ZAg4Jb_24ARxILnZ8eTRDY&key=AIzaSyC030aIYOL3SrwmT50Ptw4ywxEC9ydEpWE" allowfullscreen></iframe>
+           <img src="img/storefront.jpg" />
+
 
 <!--     <iframe src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ-ZAg4Jb_24ARxILnZ8eTRDY&key=AIzaSyC030aIYOL3SrwmT50Ptw4ywxEC9ydEpWE" width="100%" height="100%" frameborder="0" allowfullscreen></iframe> -->
         </div>
@@ -133,17 +152,33 @@
         <div class="col-md-6">
           <div class="mu-contact-right">
             <div class="mu-contact-widget">
-              <h3>Office Address</h3>
+              <h3>Location</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia temporibus corporis ea non consequatur porro corrupti hic voluptatibus assumenda, doloribus.</p>
               <address>
                 <p><i class="fa fa-map-marker"></i> 4764 Convoy St, San Diego, CA 92111</p>
                 <p><i class="fa fa-phone"></i> (858) 264-4352</p>
-                <p><i class="fa fa-envelope-o"></i>contact@markups.io</p>
 
               </address>
             </div>
             <div class="mu-contact-widget">
-              <h3>Open Hours</h3>
+              <h3>Our Hours</h3>
+<!--               <div class="tooltip">
+ -->              <div id="icon">
+                 <img src="img/snowflakeicon.ico" alt="alternative text" title="There's a crowd right now!"/>
+              </div>
+<!--               </div>
+ -->
+              <script type="text/javascript"> 
+                if (onAir()) { 
+                  //document.write("<h2>ON THE AIR</h2>"); 
+
+                } 
+                else { 
+                  //document.write("<h2>OFF THE AIR</h2>"); 
+                  document.getElementById("icon").style.display = "none";
+                } 
+              </script> 
+
               <address>
                 <p><span>Monday - Thursday</span>12:00 PM - 11:00 PM</p>
                 <p><span>Friday - Sunday</span>12:00 PM - 12:00 AM</p>
@@ -153,71 +188,10 @@
         </div>
       </div>
     </div>
-        <!-- Contact Details Column -->
-<!--         <div class="col-lg-4 mb-4">
-          <h3>Contact Details</h3>
-          <p>
-            3481 Melrose Place
-            <br>Beverly Hills, CA 90210
-            <br>
-          </p>
-          <p>
-            <abbr title="Phone">P</abbr>: (123) 456-7890
-          </p>
-          <p>
-            <abbr title="Email">E</abbr>:
-            <a href="mailto:name@example.com">name@example.com
-            </a>
-          </p>
-          <p>
-            <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM
-          </p>
-        </div>
-      </div> -->
-      <!-- /.row -->
 
-      <!-- Contact Form -->
-      <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-<!--       <div class="row">
-        <div class="col-lg-8 mb-4">
-          <h3>Send us a Message</h3>
-          <form name="sentMessage" id="contactForm" novalidate>
-            <div class="control-group form-group">
-              <div class="controls">
-                <label>Full Name:</label>
-                <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
-                <p class="help-block"></p>
-              </div>
-            </div>
-            <div class="control-group form-group">
-              <div class="controls">
-                <label>Phone Number:</label>
-                <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
-              </div>
-            </div>
-            <div class="control-group form-group">
-              <div class="controls">
-                <label>Email Address:</label>
-                <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
-              </div>
-            </div>
-            <div class="control-group form-group">
-              <div class="controls">
-                <label>Message:</label>
-                <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
-              </div>
-            </div>
-            <div id="success"></div>
-            <!-- For success/fail messages -->
-<!--             <button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>
-          </form>
-        </div>
-
-      </div> -->
-      <!-- /.row -->
-
-<!--     </div> -->
-    <!-- /.container -->
+  <section id="mu-map">
+     <iframe width="100%" height="400px" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ-ZAg4Jb_24ARxILnZ8eTRDY&key=AIzaSyC030aIYOL3SrwmT50Ptw4ywxEC9ydEpWE" allowfullscreen></iframe>
+  </section> 
 
   <!-- Start Footer -->
   <footer id="mu-footer">
