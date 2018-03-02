@@ -5,8 +5,12 @@ Author URI : http://www.markups.io/
 ========================================*/
 
 .scrollToTop {
-  background-color: #0ACCC7;
-  border: 2px solid #0ACCC7;
+  background-color: black;
+  border: 2px solid black;
+}
+
+#active a {
+  color:#0ACCC7;
 }
 
 .mu-readmore-btn,
@@ -19,6 +23,7 @@ Author URI : http://www.markups.io/
 .mu-top-slider .mu-top-slider-single .mu-top-slider-content .mu-slider-small-title,
 .mu-about-us-right ul li:before,
 .mu-title .mu-subtitle,
+.mu-faq,
 .mu-menu-item-nav li .media .media-body .media-heading a:hover, 
 .mu-menu-item-nav li .media .media-body .media-heading a:focus,
 .mu-menu-item-nav li .media .media-body .mu-menu-price,
@@ -90,7 +95,7 @@ Author URI : http://www.markups.io/
 .mu-restaurant-menu li.active a:hover,
 .mu-restaurant-menu li.active a:focus {
   color: #0ACCC7;
-  border-color: #0ACCC7 #0ACCC7 transparent;
+  border-color: #0ACCC7 #0ACCC7;
 }
 
 
