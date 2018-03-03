@@ -40,6 +40,15 @@
   padding-left: 10px;
 }
 
+.media-object {
+    height: 110px;
+    width: 110px;
+
+}
+
+.imgg {
+  max-width: 100%;
+}
 
 body {
   background-color: #ffffff;
@@ -89,8 +98,8 @@ h2 {
 
 img {
   border: none;
-  max-width: 100%;
-}
+/*  max-width: 100%;
+*/}
 
 .mu-readmore-btn {
   background-color: #fff;
@@ -1955,6 +1964,7 @@ RESERVATION SECTION
 
   #mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area .mu-menu-item-nav li .media .media-left a img {
     display: inline-block;
+
   }
 
   #mu-map {
