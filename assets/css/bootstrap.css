@@ -225,9 +225,9 @@ th {
   img {
     page-break-inside: avoid;
   }
-  img {
+/*  img {
     max-width: 100% !important;
-  }
+  }*/
   p,
   h2,
   h3 {
