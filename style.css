@@ -338,18 +338,43 @@ img {
 	SLIDER SECTION
 ====================*/
 
-#mu-slider {
+#mu-slider{
   display: inline;
   float: left;
-  margin-top: 90px;
+  margin-top: 60px;
   width: 100%;
   position: relative;
 }
 
-.mu-slider-area {
+
+.mu-slider-area, #carousel-example-generic {
   display: block;
-  width: 100%;
+  width: 1200px;
   margin: 0 auto;
+}
+
+@media (max-width: 1220px) {
+  .mu-slider-area, #carousel-example-generic {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1020px) {
+  #mu-slider {
+    margin-top: 120px;
+  }
+}
+
+.carousel-control {
+  background: none !important;
+}
+
+.glyphicon-chevron-left {
+  margin-left: -5vw !important;
+}
+
+.glyphicon-chevron-right {
+  margin-right: -5vw !important;
 }
 
 .mu-top-slider {
@@ -359,14 +384,17 @@ img {
 }
 
 .mu-top-slider-single {
+  /*
   background-color: red;
   float: left;
   position: relative;
   width: 100%;
-  height: 589px;
+  height: 100%
   overflow: hidden;
   text-align: center;
   display:inline-block;
+  */
+  width: 100%;
 }
 
 .mu-top-slider .mu-top-slider-single:after {
@@ -381,14 +409,17 @@ img {
 }
 
 .mu-top-slider .mu-top-slider-single img {
+  /*
   position: absolute;
   top: 0;
   left: 50%; transform: translate(-50%,0);
   min-width: 100%;
-  height: 589px;
+  height: 600px;
   max-width: none;
   text-align: center;
   margin: 0 auto;
+  */
+  width: 100%;
 
 }
 
@@ -578,7 +609,7 @@ img {
 .mu-faq {
   font-size: 2.5em;
   line-height: 30px;
-  font-family: 'Concert One', cursive;  
+  font-family: 'Concert One', cursive;
 }
 
 .mu-menu {
@@ -1718,7 +1749,7 @@ RESERVATION SECTION
   }
 
   .mu-contact-right {
-    display: inline !important; 
+    display: inline !important;
     float: none;
     padding-top: 30px !important;
     padding-bottom: 30px !important;
