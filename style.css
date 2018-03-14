@@ -48,6 +48,7 @@
 
 .imgg {
   max-width: 100%;
+  height: 300px
 }
 
 body {
@@ -1589,11 +1590,14 @@ RESERVATION SECTION
 ====================*/
 
 #mu-map {
-  display: inline;
-  float: left;
-  height: 500px;
-  width: 100%;
+  display: block;
+/*  float: left;
+*/  height: 500px;
+  width: 90%;
   padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #mu-map iframe {
