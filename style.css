@@ -26,11 +26,12 @@
 #RESPONSIVE DESIGN
 */
 
-@import url('https://fonts.googleapis.com/css?family=Concert+One|Josefin+Sans:300,300i,400,700');
+@import url('https://fonts.googleapis.com/css?family=Concert+One|Raleway:200,300,300i,400,700');
 
 /*
     font-family: 'Raleway', sans-serif;
     font-family: 'Concert One', cursive;
+    font-family: 'Raleway', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
 */
 
@@ -53,7 +54,7 @@
 
 body {
   background-color: #ffffff;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #333333;
   font-size: 15px;
   overflow-x: hidden;
@@ -188,13 +189,16 @@ img {
 
 #mu-header {
   background-color: #fff;
-  border-bottom: 1px solid #ddd;
   position: absolute;
   left: 0;
   top: 0;
   right: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 900;
+}
+
+.nav-container {
+  width: 1000px;
 }
 
 
@@ -244,7 +248,6 @@ img {
   color: #333;
   display: inline-block;
   font-weight: 700;
-  font-size: 35px;
   padding: 0;
   margin-top: 16px;
   height: 34px;
@@ -256,13 +259,26 @@ img {
   transition: all 0.5s;
 }
 
+.mu-main-navbar .navbar-header .navbar-brand span {
+  font-size: 35px !important;
+}
+
+.mu-main-navbar .navbar-header .navbar-brand .subtext {
+  font-size: 1em !important;
+  position: absolute;
+  margin-left: 90px;
+  margin-top: 20px;
+  font-weight: 300;
+  color: #0accc7 !important;
+}
+
 .mu-main-navbar .navbar-header .navbar-brand img {
-  margin-top: -15px;
+  margin-top: -10px;
   height: 50px !important;
   position: absolute;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 766px) {
   .mu-main-navbar .navbar-header .navbar-brand img {
     display: none;
   }
@@ -274,18 +290,26 @@ img {
 .mu-main-navbar .navbar-header .navbar-brand span {
   position: absolute;
   margin-left: 80px;
-  margin-top: -10px;
+  margin-top: -15px;
   font-size: .9em;
   font-family: 'Concert One', cursive;
   color: black !important;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 766px) {
   .mu-main-navbar .navbar-header .navbar-brand span {
     margin-left:0;
-    font-size: .7em;
-    margin-top: -15px;
+    font-size: 1.4em !important;
+    margin-top: -20px;
   }
+
+  .mu-main-navbar .navbar-header .navbar-brand .subtext {
+    margin-left: 0;
+    font-size: .7em !important;
+    margin-top: 5px;
+  }
+
+
 }
 
 
@@ -311,15 +335,15 @@ img {
 .scrollToTop {
   bottom: 60px;
   color: #fff;
-  display: none;
+  display: block;
   font-size: 30px;
   line-height: 50px;
   position: fixed;
-  right: 20px;
+  right: 8%;
   text-align: center;
   text-decoration: none;
   width: 55px;
-  z-index: 999;
+  z-index: 999 !important;
   -webkit-transition: all 0.5s ease 0s;
   -moz-transition: all 0.5s ease 0s;
   -ms-transition: all 0.5s ease 0s;
@@ -327,6 +351,9 @@ img {
   transition: all 0.5s ease 0s;
   height: 55px;
   border-radius: 50%;
+  background-color: #0accc7;
+  border-color: white;
+
 }
 
 
@@ -342,15 +369,16 @@ img {
 #mu-slider{
   display: inline;
   float: left;
-  margin-top: 60px;
+  margin-top: 120px;
   width: 100%;
   position: relative;
+  margin-bottom: 60px;
 }
 
 
 .mu-slider-area, #carousel-example-generic {
   display: block;
-  width: 1200px;
+  width: 1000px;
   margin: 0 auto;
 }
 
@@ -2043,17 +2071,18 @@ RESERVATION SECTION
 width: 100%;
 position: relative;
 display: flex;
-padding: 30px 0 25px 0;
+padding: 0px;
+margin-bottom: 60px;
 }
 
 
 .whyus-container, .menu-container, .mail-container {
-  width: 1200px;
+  width: 1000px;
   padding: 0;
 }
 
 @media (max-width: 1220px) {
-  .whyus-container, .menu-container, .mail-container {
+  .whyus-container, .menu-container, .mail-container, .nav-container {
     width: 90% !important;
   }
 }
@@ -2082,36 +2111,51 @@ padding: 30px 0 25px 0;
 
 
 .whyus-text {
-  text-align: center;
+  text-align: left;
 }
 
 .whyus-text .title {
-  margin: 25% auto 3px auto;
   font-size: 2em;
-  font-weight: 400;
+  font-weight: 700;
   text-transform: uppercase;
   /*font-family: 'Concert One', cursive;*/
   letter-spacing: .05em;
 }
 
-.whyus-text .subtitle {
-  margin: 0 auto;
-  font-size: 1.4em;
-  font-weight: 300;
-  font-style: italic;
-}
 
 .whyus-text .content {
-  width: 70%;
-  margin: 30px auto;
+  margin: 10px auto 30px auto;
   font-size: 1.125em;
-  font-weight: 300;
+  font-weight: 200;
+}
+
+.whyus-text button {
+  background-color: #0accc7;
+  color: white;
+  text-align: center;
+  border: 1px solid white;
+  width: 100px;
+  height: 40px;
+}
+
+.whyus-text button:hover {
+  background-color: white;
+  color: #0accc7;
 }
 
 
 @media (max-width: 768px) {
-  .mail-form .form {
-    margin-bottom: 30px !important;
+
+  #mu-slider {
+    margin-top: 50px;
+  }
+
+  #mu-slider, #whyus-section, #menu-section, #mail-section {
+    margin-bottom: 50px !important;
+  }
+
+  .whyus-text .block, .mail-form .form  {
+    margin: 40px auto !important;
   }
   .mail-row .image {
     display: none;
@@ -2119,19 +2163,10 @@ padding: 30px 0 25px 0;
 
 
 
-  #whyus-section{
-    padding: 0px 0 25px 0;
-  }
 
   .whyus-pic {
     display: none;
   }
-
-
-  .whyus-text .title {
-   margin-top: 30px !important;
-  }
-
   .menu-title .description {
     width: 90% !important;
   }
@@ -2147,24 +2182,17 @@ padding: 30px 0 25px 0;
 
 }
 
-@media (max-width: 992px) {
-  #whyus-section {
-    padding-top: 35px;
-  }
- .whyus-text .title {
-  margin-top: 50px !important;
- }
-}
 
 @media (max-width: 1170px) {
+
+
   .mail-form .form {
     width: 70% !important;
   }
 
-  #whyus-section {
-    padding-top: 30px;
-  }
-  .whyus-text .content {
+
+
+  .whyus-text .block, .mail-form .form  {
     width: 70% !important;
   }
 }
@@ -2172,11 +2200,11 @@ padding: 30px 0 25px 0;
 
 
 #menu-section {
-  margin-top: 40px;
+  margin-bottom: 60px;
   width: 100%;
   position: relative;
   display: flex;
-  padding: 25px 0 25px 0;
+  padding: 0px;
   text-align: center;
 }
 
@@ -2192,13 +2220,13 @@ padding: 30px 0 25px 0;
   font-size: 2em;
   text-transform: uppercase;
   color: #0accc7;
-  font-weight: 300;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
 .menu-title .title .line {
   height: 2px;
-  width: 10%;
+  width: 160px;
   background-color: #0accc7;
   margin: 0 auto;
 }
@@ -2213,7 +2241,7 @@ padding: 30px 0 25px 0;
 }
 
 .menu-title {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .menu-row .image img {
@@ -2231,9 +2259,14 @@ padding: 30px 0 25px 0;
   font-weight: 300;
 }
 
+.menu-row .image .text u {
+  text-decoration: none;
+  border-bottom: 2px solid white;
+}
+
 .menu-row .image .text .line {
   height: 2px;
-  width: 10%;
+  width: 5%;
   background-color: white;
   margin: 0 auto;
 }
@@ -2242,9 +2275,8 @@ padding: 30px 0 25px 0;
 width: 100%;
 position: relative;
 display: flex;
-padding: 30px 0 25px 0;
 background-color: white;
-margin: 20px 0;
+margin-bottom: 60px;
 }
 
 .mail-row {
@@ -2257,23 +2289,22 @@ margin: 20px 0;
 
 .mail-form {
   color: white;
-
 }
 
-.mail-form .form {
-  width: 50%;
-  margin: 15% auto 0 auto;
+.mail-form .form, .whyus-text .block {
+  width: 60%;
+  margin: 20% auto 0 auto;
 }
 
 .mail-form .form .title {
   font-size: 2em;
-  font-weight: 400;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
 .mail-form .form .sub-title {
   font-size: 1.125em;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 90%;
   margin: 10px 0 50px 0;
 }
@@ -2285,6 +2316,9 @@ margin: 20px 0;
   color: #0accc7;
   border: 0;
   margin-top: 10px;
+  height: 40px;
+  font-size: 1.125 !important;
+  font-weight: 200;
 }
 
 
@@ -2296,4 +2330,19 @@ margin: 20px 0;
 
 .mail-row .image img {
   width: 100%;
+}
+
+#mail-input {
+  padding-left: 10px;
+}
+
+#mail-submit{
+  background-color: #0accc7;
+  color: white;
+  border: 1px solid white;
+}
+
+#mail-submit:hover {
+  background-color: white;
+  color: #0accc7;
 }

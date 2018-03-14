@@ -57,7 +57,7 @@
   <!-- Start header section -->
   <header id="mu-header">
     <nav class="navbar navbar-default mu-main-navbar" role="navigation">
-      <div class="container">
+      <div class="container nav-container">
         <div class="navbar-header">
           <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -70,7 +70,14 @@
           <!-- LOGO -->
 
           <!--  Text based logo  -->
-          <a class="navbar-brand" href="index.html"><img src="img/logo2.png" class="logoImage" /><span>-21&#176;C SNOWFLAKE</span></a>
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo2.png" class="logoImage" />
+            <span>-21&#176;C SNOWFLAKE
+            </span>
+            <div class="subtext">
+              creamy, soft, smooth shaved milk
+            </div>
+          </a>
 
           <!--  Image based logo  -->
           <!-- <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="Logo img"></a>  -->
@@ -102,6 +109,9 @@
       <div class="item">
         <img src="img/slider1.jpg" alt="...">
       </div>
+      <div class="item">
+        <img src="img/milkteas2.jpg" alt="...">
+      </div>
     </div>
 
     <!-- Controls -->
@@ -126,16 +136,16 @@
         </div>
       </div>
       <div class ="col-sm-6 whyus-text">
-        <div class="title">
-          -21&#176;C Snowflake
-        </div>
+        <div class="block">
+          <div class="title">
+            WHY US?
+          </div>
+          <div class="content">
+            We are known for our Snowflake, a milk based twist to the popular shaved ice dessert that offers a creamy, soft, and smooth texture.
+          </div>
 
-        <div class="subtitle">
-          sweet, smooth, shaved ice
-        </div>
 
-        <div class="content">
-          It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          <a href="aboutus.html"><button href="aboutus.html">Learn more</button></a>
         </div>
       </div>
     </div>
@@ -147,31 +157,25 @@
     <div class="menu-title">
       <div class ="title">
         our menu
-        <div class="line"></div>
-      </div>
-      <div class="description">
-        Check out our selection of tasty, breads, delectable cakes, refreshing teas, and coffee brewed at the perfect temperature.
+
       </div>
     </div>
     <div class="row menu-row">
       <div class="col-sm-4 image">
         <div class="text">
-          SNOWFLAKE
-          <div class="line"></div>
+          <u>SNOWFLAKE</u>
         </div>
         <img src="img/snowflake.jpg" />
       </div>
       <div class="col-sm-4 image">
         <div class="text">
-          TOAST
-          <div class="line"></div>
+          <u>TOAST</u>
         </div>
         <img src="img/toast.jpg" />
       </div>
       <div class="col-sm-4 image">
         <div class="text">
-          TEA
-          <div class="line"></div>
+          <u>TEA</u>
         </div>
         <img src="img/milktea.jpg" />
       </div>
@@ -192,13 +196,13 @@
             Be the first to know about our latest promotions and new releases.
           </div>
 
-          <input type="text" name="FirstName" value="Email">
-          <input type="submit" value="Submit">
+          <input type="text" name="FirstName" placeholder="Email" id="mail-input">
+          <input type="submit" value="Submit" id="mail-submit">
         </div>
       </div>
 
       <div class="col-sm-6 image">
-        <img src="img/store.jpg" />
+        <img src="img/storecopy.jpg" />
       </div>
     </div>
   </div>
