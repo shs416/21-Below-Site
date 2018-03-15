@@ -332,14 +332,23 @@ img {
 
 /*scrol to top*/
 
+.scrollToTopBox {
+  position: fixed;
+  width: 1000px;
+  margin: 0 auto;
+  bottom: 40px;
+  height: 40px;
+  left: 50%; transform: translate(-50%,0);
+  z-index: 966;
+}
+
 .scrollToTop {
-  bottom: 60px;
   color: #fff;
-  display: block;
+  display: none;
   font-size: 30px;
   line-height: 50px;
   position: fixed;
-  right: 8%;
+  right: 0;
   text-align: center;
   text-decoration: none;
   width: 55px;
@@ -354,6 +363,11 @@ img {
   background-color: #0accc7;
   border-color: white;
 
+}
+
+.scrollToTop:hover {
+  color: #0accc7 !important;
+  background-color: white;
 }
 
 
@@ -2082,7 +2096,7 @@ margin-bottom: 60px;
 }
 
 @media (max-width: 1220px) {
-  .whyus-container, .menu-container, .mail-container, .nav-container {
+  .whyus-container, .menu-container, .mail-container, .nav-container, .scrollToTopBox {
     width: 90% !important;
   }
 }
