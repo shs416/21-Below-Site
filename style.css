@@ -333,23 +333,14 @@ img {
 
 /*scrol to top*/
 
-.scrollToTopBox {
-  position: fixed;
-  width: 1000px;
-  margin: 0 auto;
-  bottom: 40px;
-  height: 40px;
-  left: 50%; transform: translate(-50%,0);
-  z-index: 966;
-}
-
 .scrollToTop {
+  bottom: 60px;
   color: #fff;
-  display: none;
+  display: block;
   font-size: 30px;
   line-height: 50px;
   position: fixed;
-  right: 0;
+  right: 8%;
   text-align: center;
   text-decoration: none;
   width: 55px;
@@ -364,11 +355,6 @@ img {
   background-color: #0accc7;
   border-color: white;
 
-}
-
-.scrollToTop:hover {
-  color: #0accc7 !important;
-  background-color: white;
 }
 
 
@@ -2100,7 +2086,7 @@ margin-bottom: 60px;
 }
 
 @media (max-width: 1220px) {
-  .whyus-container, .menu-container, .mail-container, .nav-container, .scrollToTopBox {
+  .whyus-container, .menu-container, .mail-container, .nav-container {
     width: 90% !important;
   }
 }
@@ -2194,7 +2180,7 @@ margin-bottom: 60px;
 
   .menu-row .image {
     margin-bottom: 10px;
-    padding: 0 !important;
+    padding: 0;
   }
 
 
@@ -2262,21 +2248,6 @@ margin-bottom: 60px;
   margin-bottom: 20px;
 }
 
-.menu-row .imageLeft {
-  padding-left: 0px;
-  padding-right: 10px;
-}
-
-.menu-row .imageCenter {
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.menu-row .imageRight {
-  padding-left: 10px;
-  padding-right: 0px;
-}
-
 .menu-row .image img {
   width: 100%;
 }
@@ -2338,6 +2309,7 @@ margin-bottom: 60px;
 .mail-form .form .sub-title {
   font-size: 1.125em;
   font-weight: 200;
+  line-height: 90%;
   margin: 10px 0 50px 0;
 }
 
