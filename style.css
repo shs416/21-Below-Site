@@ -2176,7 +2176,7 @@ margin-bottom: 60px;
 
   .menu-row .image {
     margin-bottom: 10px;
-    padding: 0;
+    padding: 0 !important;
   }
 
 
@@ -2244,6 +2244,21 @@ margin-bottom: 60px;
   margin-bottom: 20px;
 }
 
+.menu-row .imageLeft {
+  padding-left: 0px;
+  padding-right: 10px;
+}
+
+.menu-row .imageCenter {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.menu-row .imageRight {
+  padding-left: 10px;
+  padding-right: 0px;
+}
+
 .menu-row .image img {
   width: 100%;
 }
@@ -2305,7 +2320,6 @@ margin-bottom: 60px;
 .mail-form .form .sub-title {
   font-size: 1.125em;
   font-weight: 200;
-  line-height: 90%;
   margin: 10px 0 50px 0;
 }
 
