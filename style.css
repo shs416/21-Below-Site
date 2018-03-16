@@ -333,8 +333,6 @@ img {
 
 /*scrol to top*/
 
-<<<<<<< HEAD
-=======
 .scrollToTopBox {
   position: fixed;
   width: 1000px;
@@ -345,7 +343,6 @@ img {
   z-index: 966;
 }
 
->>>>>>> ray-3
 .scrollToTop {
   bottom: 60px;
   color: #fff;
@@ -2099,11 +2096,7 @@ margin-bottom: 60px;
 }
 
 @media (max-width: 1220px) {
-<<<<<<< HEAD
-  .whyus-container, .menu-container, .mail-container, .nav-container {
-=======
   .whyus-container, .menu-container, .mail-container, .nav-container, .scrollToTopBox, .footer-container {
->>>>>>> ray-3
     width: 90% !important;
   }
 }
