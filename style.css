@@ -336,7 +336,7 @@ img {
   position: fixed;
   width: 1000px;
   margin: 0 auto;
-  bottom: 40px;
+  bottom: 80px;
   height: 40px;
   left: 50%; transform: translate(-50%,0);
   z-index: 966;
@@ -1666,10 +1666,8 @@ RESERVATION SECTION
 
 .mu-footer-social {
   display: inline;
-  float: left;
-  width: 100%;
+  float: right;
   text-align: center;
-  margin-bottom: 10px;
 }
 
 .mu-footer-social a {
@@ -1680,7 +1678,7 @@ RESERVATION SECTION
   font-size: 20px;
   height: 45px;
   line-height: 47px;
-  margin: 5px;
+  margin-right: 5px;
   text-align: center;
   width: 45px;
   -webkit-transition: all 0.5s;
@@ -1692,8 +1690,10 @@ RESERVATION SECTION
 
 .mu-footer-copyright {
   display: inline;
-  float: left;
+  float: right;
   width: 100%;
+  margin-top: 20px;
+  text-align: right;
 }
 
 .mu-footer-copyright p {
@@ -2090,13 +2090,13 @@ margin-bottom: 60px;
 }
 
 
-.whyus-container, .menu-container, .mail-container {
+.whyus-container, .menu-container, .mail-container, .footer-container {
   width: 1000px;
   padding: 0;
 }
 
 @media (max-width: 1220px) {
-  .whyus-container, .menu-container, .mail-container, .nav-container, .scrollToTopBox {
+  .whyus-container, .menu-container, .mail-container, .nav-container, .scrollToTopBox, .footer-container {
     width: 90% !important;
   }
 }
@@ -2159,6 +2159,28 @@ margin-bottom: 60px;
 
 
 @media (max-width: 768px) {
+
+  .footer-col {
+    padding: 0;
+  }
+
+  .footer-col .description .left {
+    width: 20% !important;
+  }
+  .footer-col .description .right {
+    width: 80% !important;
+    text-align: left !important;
+  }
+
+  .mu-footer-social {
+    margin-top: 30px;
+    margin-bottom: -10px;
+    float: left !important;
+  }
+
+  .mu-footer-copyright {
+    text-align: left;
+  }
 
   #mu-slider {
     margin-top: 50px;
@@ -2373,4 +2395,53 @@ margin-bottom: 60px;
 #mail-submit:hover {
   background-color: white;
   color: #0accc7;
+}
+
+
+
+/* Footer */
+
+
+.footer-row {
+  background-color: #0accc7;
+  color: white;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.footer-col-left {
+  padding-left: 0;
+}
+
+.footer-col-right {
+  padding-right: 0;
+}
+
+
+.footer-col .title {
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.footer-col .description {
+  font-size: 1em;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.footer-col .description .left {
+  display: inline-block;
+  width: 50%;
+}
+
+.footer-col .description .right {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+  float: right;
+}
+
+.footer-col .mu-footer-copyright {
+  font-size: 1em;
 }
