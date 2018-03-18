@@ -48,9 +48,30 @@
 
 }
 
+#menurow {
+  margin: 0 !important; 
+}
+
+.menucol {
+  width: 1026px;
+  height: 100%;
+  text-align: left;
+/*  padding-left: 10%;
+  padding-right: 10%;*/
+  margin-left: 5%;
+}
+
 .imgg {
   max-width: 100%;
-  height: 300px
+}
+
+#snowpic {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+#la:hover {
+  opacity: 0.7;
 }
 
 body {
@@ -642,9 +663,6 @@ img {
   font-family: 'Concert One', cursive;
 }
 
-.mu-menu {
-  padding-top: 2%;
-}
 
 /*==================
  COUNTER SECTION
@@ -824,8 +842,8 @@ img {
   display: inline;
   float: left;
   width: 100%;
-  padding: 50px 0;
-}
+/*  padding: 50px 0;
+*/}
 
 .mu-tab-content-left {
   display: inline;
@@ -836,9 +854,10 @@ img {
 
 .mu-tab-content-right {
   display: inline;
-  float: left;
-  padding-left: 15px;
+/*  float: left;
+  padding-left: 15px;*/
   width: 100%;
+  padding-right: 0px;
 }
 
 .mu-menu-item-nav li {
