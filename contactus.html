@@ -81,15 +81,17 @@ var hourofday = date.getHours();
   <body>
 
   <!--START SCROLL TOP BUTTON -->
+  <div class="scrollToTopBox">
     <a class="scrollToTop" href="#">
       <i class="fa fa-angle-up"></i>
     </a>
+  </div>
   <!-- END SCROLL TOP BUTTON -->
 
   <!-- Start header section -->
   <header id="mu-header">
     <nav class="navbar navbar-default mu-main-navbar" role="navigation">
-      <div class="container">
+      <div class="container nav-container">
         <div class="navbar-header">
           <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -101,8 +103,15 @@ var hourofday = date.getHours();
 
           <!-- LOGO -->
 
-           <!--  Text based logo  -->
-          <a class="navbar-brand" href="index.html"><img src="img/logo2.png" class="logoImage" /><span>-21&#176;C SNOWFLAKE</span></a>
+          <!--  Text based logo  -->
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo2.png" class="logoImage" />
+            <span>-21&#176;C SNOWFLAKE
+            </span>
+            <div class="subtext">
+              creamy, soft, smooth shaved milk
+            </div>
+          </a>
 
           <!--  Image based logo  -->
           <!-- <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="Logo img"></a>  -->
@@ -111,11 +120,11 @@ var hourofday = date.getHours();
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
-            <li><a href="index.html">HOME</a></li>
+            <li id="active"><a href="index.html">HOME</a></li>
             <li><a href="aboutus.html">ABOUT US</a></li>
             <li><a href="menu.html">MENU</a></li>
             <li><a href="faqs.html">FAQs</a></li>
-            <li id="active"><a href="contactus.html">CONTACT US</a></li>
+            <li><a href="contactus.html">CONTACT US</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -185,26 +194,63 @@ var hourofday = date.getHours();
 
     <section id="mu-map">
        <iframe width="90%" height="400px" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ-ZAg4Jb_24ARxILnZ8eTRDY&key=AIzaSyC030aIYOL3SrwmT50Ptw4ywxEC9ydEpWE" allowfullscreen></iframe>
-    </section> 
+    </section>
     </div>
 
   <!-- Start Footer -->
   <footer id="mu-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-        <div class="mu-footer-area">
-           <div class="mu-footer-social">
+    <div class="container footer-container">
+      <div class="row footer-row">
+        <div class="col-sm-2 footer-col footer-col-left">
+          <div class="title">
+            Address
+          </div>
+          <div class="description">
+            4764 Convoy St<br />San Diego, CA 92111
+          </div>
+        </div>
+
+        <div class="col-sm-2 footer-col">
+          <div class="title">
+            Contact
+          </div>
+          <div class="description">
+            (858) 264-4352
+          </div>
+        </div>
+
+        <div class="col-sm-2 footer-col">
+          <div class="title">
+            Hours
+          </div>
+          <div class="description">
+
+            <div class="left">
+              M-Th
+            </div>
+            <div class="right">
+              12pm-11pm
+            </div>
+            <div class="left">
+              F-Su
+            </div>
+            <div class="right">
+              12pm-12am
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-sm-3 footer-col col-sm-offset-1 footer-col-right">
+          <div class="mu-footer-social">
             <a href="https://www.yelp.com/biz/21-c-snowflake-san-diego-3" target="_blank"><span class="fab fa-yelp"></span></a>
             <a href="https://www.instagram.com/explore/locations/323032044800449/21c-below-snowflake/" target="_blank"><span class="fab fa-instagram"></span></a>
             <a href="https://www.facebook.com/21belowsnowflake/" target="_blank"><span class="fab fa-facebook-f"></span></a>
-
           </div>
           <div class="mu-footer-copyright">
-            <p>&copy; Copyright <a rel="nofollow" href="http://markups.io">markups.io</a>. All right reserved.</p>
+            <p>&copy; 2018 -21&#176;C Snowflake.</p>
           </div>
         </div>
-      </div>
       </div>
     </div>
   </footer>
