@@ -338,7 +338,7 @@ img {
   position: fixed;
   width: 1000px;
   margin: 0 auto;
-  bottom: 80px;
+  bottom: 140px;
   height: 40px;
   left: 50%; transform: translate(-50%,0);
   z-index: 966;
@@ -351,7 +351,7 @@ img {
   font-size: 30px;
   line-height: 50px;
   position: fixed;
-  right: 0;
+  right: -60px;
   text-align: center;
   text-decoration: none;
   width: 55px;
@@ -829,13 +829,13 @@ img {
   background-color: red;
   padding: 0;
   margin: 0;
-  height: 40px;
+  height: 45px;
 
 }
 
 .mu-restaurant-menu li a {
   height: 100%;
-    font-size: 1em !important;
+    font-size: 1.125 !important;
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 0;
@@ -2150,6 +2150,10 @@ margin-bottom: 60px;
   .whyus-container, .menu-container, .mail-container, .nav-container, .scrollToTopBox, .footer-container, .story-container, .process-container, .menupage-container {
     width: 90% !important;
   }
+
+  .scrollToTop {
+    right: 0;
+  }
 }
 
 .whyus-row {
@@ -2616,8 +2620,13 @@ margin-bottom: 60px;
 }
 
 .menu-text .block {
-  width: 80%;
+  display: block;
   margin: 0 auto 0 auto;
+}
+
+.menu-text {
+  padding-right: 0;
+  padding-left: 30px;
 }
 
 
@@ -2651,29 +2660,58 @@ margin-top: 120px;
   margin-bottom: 15px;
 }
 
+.menupage-row .menu-text .tea-block {
+}
+
+
+.menupage-row .menu-text .tea-block .sep {
+  text-align: left !important;
+  font-size: 1.125em;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block !important;
+  width: 100% !important;
+  line-height: 200%;
+  height: 30px;
+}
+
+.menupage-row .menu-text .tea-block .item .name {
+  font-weight: 300;
+}
+
 .menupage-row .menu-text .item {
   width: 100%;
   font-size: 1.125em;
   font-weight: 700;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
   line-height: 90%;
 }
 
 .menupage-row .menu-text .item .name{
   display: inline-block;
-  width: 100%;
+  width: 80%;
   float: left;
+  line-height: 170%;
+  text-transform: uppercase;
 }
 
 .menupage-row .menu-text .item .price {
   display: inline-block;
   font-size: 1em !important;
-  font-weight: 300;
+  font-weight: 700;
+  width: 20%;
+  text-align: right;
+  float: right;
   color: #0accc7;
+  line-height: 140%;
 }
 
 .menupage-row .menu-text .item .description {
+  display: inline-block;
+  width: 100%;
   font-weight: 300;
   font-style: italic;
   font-size: .831em;
