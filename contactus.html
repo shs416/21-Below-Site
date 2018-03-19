@@ -50,19 +50,19 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-<script type="text/javascript"> 
-/*  var thedate = new Date(); 
-  var dayofweek = thedate.getUTCDay(); 
-  var hourofday = thedate.getUTCHours(); 
+<script type="text/javascript">
+/*  var thedate = new Date();
+  var dayofweek = thedate.getUTCDay();
+  var hourofday = thedate.getUTCHours();
 */
 var date = new Date();
-var dayofweek = date.getUTCDay(); 
+var dayofweek = date.getUTCDay();
 // var utcDate = new Date(date.toUTCString());
 // utcDate.setHours(utcDate.getHours()-8);
 var hourofday = date.getHours();
 //console.log(date.getHours());
 
-  function busy() { 
+  function busy() {
     //console.log(hourofday);
 
   // MON-THURS: 7-9
@@ -70,26 +70,28 @@ var hourofday = date.getHours();
   // SUN: 8-10
   if ((dayofweek >= 1 && dayofweek <= 4) && ((hourofday >= 19 && hourofday <= 22))
       || ((dayofweek >= 5 && dayofweek <= 6) && (hourofday >= 18 && hourofday <= 22))
-      || ((dayofweek == 0) && (hourofday >= 20 && hourofday <= 22))) { 
-    return true; 
-  } 
-  return false; 
-  } 
+      || ((dayofweek == 0) && (hourofday >= 20 && hourofday <= 22))) {
+    return true;
+  }
+  return false;
+  }
 </script>
 
   </head>
   <body>
 
   <!--START SCROLL TOP BUTTON -->
+  <div class="scrollToTopBox">
     <a class="scrollToTop" href="#">
       <i class="fa fa-angle-up"></i>
     </a>
+  </div>
   <!-- END SCROLL TOP BUTTON -->
 
   <!-- Start header section -->
   <header id="mu-header">
     <nav class="navbar navbar-default mu-main-navbar" role="navigation">
-      <div class="container">
+      <div class="container nav-container">
         <div class="navbar-header">
           <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -101,8 +103,15 @@ var hourofday = date.getHours();
 
           <!-- LOGO -->
 
-           <!--  Text based logo  -->
-          <a class="navbar-brand" href="index.html"><img src="img/logo2.png" class="logoImage" /><span>-21&#176;C SNOWFLAKE</span></a>
+          <!--  Text based logo  -->
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo2.png" class="logoImage" />
+            <span>-21&#176;C SNOWFLAKE
+            </span>
+            <div class="subtext">
+              creamy, soft, smooth shaved milk
+            </div>
+          </a>
 
           <!--  Image based logo  -->
           <!-- <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="Logo img"></a>  -->
@@ -128,14 +137,15 @@ var hourofday = date.getHours();
       <div class="container">
 
       <!-- Page Heading/Breadcrumbs -->
-      <div class="mu-title">      
+<!--       <div class="mu-title">
         <span class="mu-subtitle">
           Contact Us
         </span>
-      </div>
+      </div> -->
 
       <!-- Content Row -->
       <div class="row">
+        <div class="contact-container"
         <!-- Map Column -->
         <div class="col-md-6">
            <img class="imgg" src="img/storefront.jpg" />
@@ -145,27 +155,25 @@ var hourofday = date.getHours();
         <div class="col-md-6">
           <div class="mu-contact-right">
             <div class="mu-contact-widget">
-              <h3>Location</h3>
+              <h3 id ="contacttext">Location</h3>
 
               <address>
-                <p><i class="fa fa-map-marker"></i> 4764 Convoy St, San Diego, CA 92111</p>
-                <p><i class="fa fa-phone"></i> (858) 264-4352</p>
-
-              <p>We are happy to work with student organizations! Please contact us for more information.</p>
+                <p><!-- <i class="fa fa-map-marker"></i>  -->4764 Convoy St, San Diego, CA 92111</p>
+                <p><!-- <i class="fa fa-phone"></i>  -->(858) 264-4352</p>
 
               </address>
             </div>
             <div class="mu-contact-widget">
-            <h3>Our Hours</h3>
+            <h3 id="contacttext">Hours</h3>
              <div id="icon">
                  <img class="imgg" src="img/snowflakeicon.ico" alt="alternative text" title="There's a crowd right now!"/>
               </div>
 
-              <script type="text/javascript"> 
-                if (!busy()) { 
+              <script type="text/javascript">
+                if (!busy()) {
                   document.getElementById("icon").style.display = "none";
-                } 
-              </script> 
+                }
+              </script>
 
               <address>
                 <p><span>Monday   </span>12:00 PM - 11:00 PM</p>
@@ -174,38 +182,75 @@ var hourofday = date.getHours();
                 <p><span>Thursday </span>12:00 PM - 11:00 PM</p>
                 <p><span>Friday   </span>12:00 PM - 12:00 AM</p>
                 <p><span>Saturday </span>12:00 PM - 12:00 AM</p>
-                <p><span>Sunday   </span>12:00 PM - 12:00 AM</p>                
+                <p><span>Sunday   </span>12:00 PM - 12:00 AM</p>
               </address>
             </div>
           </div>
         </div>
       </div>
     </div>
+    </div>
 
 
-    <section id="mu-map">
+    <section class="mu-map">
        <iframe width="90%" height="400px" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ-ZAg4Jb_24ARxILnZ8eTRDY&key=AIzaSyC030aIYOL3SrwmT50Ptw4ywxEC9ydEpWE" allowfullscreen></iframe>
-    </section> 
-
+    </section>
     </div>
 
   <!-- Start Footer -->
   <footer id="mu-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-        <div class="mu-footer-area">
-           <div class="mu-footer-social">
+    <div class="container footer-container">
+      <div class="row footer-row">
+        <div class="col-sm-2 footer-col footer-col-left">
+          <div class="title">
+            Address
+          </div>
+          <div class="description">
+            4764 Convoy St<br />San Diego, CA 92111
+          </div>
+        </div>
+
+        <div class="col-sm-2 footer-col">
+          <div class="title">
+            Contact
+          </div>
+          <div class="description">
+            (858) 264-4352
+          </div>
+        </div>
+
+        <div class="col-sm-2 footer-col">
+          <div class="title">
+            Hours
+          </div>
+          <div class="description">
+
+            <div class="left">
+              M-Th
+            </div>
+            <div class="right">
+              12pm-11pm
+            </div>
+            <div class="left">
+              F-Su
+            </div>
+            <div class="right">
+              12pm-12am
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-sm-3 footer-col col-sm-offset-1 footer-col-right">
+          <div class="mu-footer-social">
             <a href="https://www.yelp.com/biz/21-c-snowflake-san-diego-3" target="_blank"><span class="fab fa-yelp"></span></a>
             <a href="https://www.instagram.com/explore/locations/323032044800449/21c-below-snowflake/" target="_blank"><span class="fab fa-instagram"></span></a>
             <a href="https://www.facebook.com/21belowsnowflake/" target="_blank"><span class="fab fa-facebook-f"></span></a>
-
           </div>
           <div class="mu-footer-copyright">
-            <p>&copy; Copyright <a rel="nofollow" href="http://markups.io">markups.io</a>. All right reserved.</p>
+            <p>&copy; 2018 -21&#176;C Snowflake.</p>
           </div>
         </div>
-      </div>
       </div>
     </div>
   </footer>

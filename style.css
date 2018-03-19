@@ -35,6 +35,23 @@
     font-family: 'Josefin Sans', sans-serif;
 */
 
+#snowpic:hover {
+  opacity: 0.7;
+
+/*background: rgba(0,0,0,0.5);
+*/}
+
+#contacttext {
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+.text {
+  position: relative;
+}
+
 #icon {
   height:50px;
   width: 50px;
@@ -48,30 +65,8 @@
 
 }
 
-#menurow {
-  margin: 0 !important; 
-}
-
-.menucol {
-  width: 1026px;
-  height: 100%;
-  text-align: left;
-/*  padding-left: 10%;
-  padding-right: 10%;*/
-  margin-left: 5%;
-}
-
 .imgg {
   max-width: 100%;
-}
-
-#snowpic {
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
-}
-
-#la:hover {
-  opacity: 0.7;
 }
 
 body {
@@ -249,6 +244,7 @@ img {
 }
 
 .mu-main-navbar .mu-main-nav li a {
+  text-align: left;
   color: #333;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -354,14 +350,24 @@ img {
 
 /*scrol to top*/
 
+.scrollToTopBox {
+  position: fixed;
+  width: 1000px;
+  margin: 0 auto;
+  bottom: 80px;
+  height: 40px;
+  left: 50%; transform: translate(-50%,0);
+  z-index: 966;
+}
+
 .scrollToTop {
   bottom: 60px;
   color: #fff;
-  display: block;
+  display: none;
   font-size: 30px;
   line-height: 50px;
   position: fixed;
-  right: 8%;
+  right: 0;
   text-align: center;
   text-decoration: none;
   width: 55px;
@@ -385,7 +391,7 @@ img {
 }
 
 /*==================
-	SLIDER SECTION
+  SLIDER SECTION
 ====================*/
 
 #mu-slider{
@@ -401,6 +407,13 @@ img {
 .mu-slider-area, #carousel-example-generic {
   display: block;
   width: 1000px;
+  margin: 0 auto;
+}
+
+
+#carousel-example-generic-2 {
+  display: block;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -420,12 +433,20 @@ img {
   background: none !important;
 }
 
-.glyphicon-chevron-left {
+.glyphicon-chevron-left-1 {
   margin-left: -5vw !important;
 }
 
-.glyphicon-chevron-right {
+.glyphicon-chevron-right-1 {
   margin-right: -5vw !important;
+}
+
+.glyphicon-chevron-left-2 {
+  margin-left: -2vw !important;
+}
+
+.glyphicon-chevron-right-2 {
+  margin-right: -2vw !important;
 }
 
 .mu-top-slider {
@@ -580,7 +601,7 @@ img {
 
 
 /*==================
-	ABOUT US SECTION
+  ABOUT US SECTION
 ====================*/
 
 #mu-about-us {
@@ -663,6 +684,9 @@ img {
   font-family: 'Concert One', cursive;
 }
 
+.mu-menu {
+  padding-top: 2%;
+}
 
 /*==================
  COUNTER SECTION
@@ -807,23 +831,35 @@ img {
 }
 
 .mu-restaurant-menu {
-  display: inline-block;
+  display: block;
   width: 100%;
   text-align: center;
   border: none;
+  padding: 0;
 }
 
 .mu-restaurant-menu li {
   display: inline-block;
-  float: none;
+  float: left;
+  width: 33.333%;
+  background-color: red;
+  padding: 0;
+  margin: 0;
+  height: 40px;
+
 }
 
 .mu-restaurant-menu li a {
-  font-size: 18px;
+  height: 100%;
+    font-size: 1em !important;
+  font-weight: 700;
+  text-transform: uppercase;
   border-radius: 0;
-  color: #fff;
+  color: #0accc7;
+  background-color: white;
+  border-color: #0accc7;
   font-size: 18px;
-  margin: 0 15px;
+  margin: 0;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -835,15 +871,16 @@ img {
 .mu-restaurant-menu .active a,
 .mu-restaurant-menu .active a:hover,
 .mu-restaurant-menu .active a:focus {
-  background-color: #FFF;
+  background-color: #0accc7 !important;
+  color: white !important;
 }
 
 .mu-tab-content-area {
   display: inline;
   float: left;
   width: 100%;
-/*  padding: 50px 0;
-*/}
+  padding: 20px 0;
+}
 
 .mu-tab-content-left {
   display: inline;
@@ -854,10 +891,9 @@ img {
 
 .mu-tab-content-right {
   display: inline;
-/*  float: left;
-  padding-left: 15px;*/
+  float: left;
+  padding-left: 15px;
   width: 100%;
-  padding-right: 0px;
 }
 
 .mu-menu-item-nav li {
@@ -1585,11 +1621,12 @@ RESERVATION SECTION
 }
 
 .mu-contact-right .mu-contact-widget address {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .mu-contact-right .mu-contact-widget address p {
   letter-spacing: 0.5px;
+  color: black;
 }
 
 .mu-contact-right .mu-contact-widget address p i {
@@ -1637,20 +1674,31 @@ RESERVATION SECTION
  MAP SECTION
 ====================*/
 
-#mu-map {
+.mu-map {
   display: block;
 /*  float: left;
 */  height: 500px;
-  width: 90%;
+  width: 1000px;
   padding-top: 30px;
   padding-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
 }
 
-#mu-map iframe {
+.mu-map iframe {
   width: 100%;
   height: 100%;
+}
+
+.contact-container {
+  display: block;
+/*  float: left;
+*/  height: 500px;
+  width: 1000px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;  
 }
 
 /*==================
@@ -1675,10 +1723,8 @@ RESERVATION SECTION
 
 .mu-footer-social {
   display: inline;
-  float: left;
-  width: 100%;
+  float: right;
   text-align: center;
-  margin-bottom: 10px;
 }
 
 .mu-footer-social a {
@@ -1689,7 +1735,7 @@ RESERVATION SECTION
   font-size: 20px;
   height: 45px;
   line-height: 47px;
-  margin: 5px;
+  margin-right: 5px;
   text-align: center;
   width: 45px;
   -webkit-transition: all 0.5s;
@@ -1701,8 +1747,10 @@ RESERVATION SECTION
 
 .mu-footer-copyright {
   display: inline;
-  float: left;
+  float: right;
   width: 100%;
+  margin-top: 20px;
+  text-align: right;
 }
 
 .mu-footer-copyright p {
@@ -1814,12 +1862,34 @@ RESERVATION SECTION
 @media (max-width: 767px) {
 
   #mu-header {
-    padding: 0 15px;
+
   }
+
+  .menupage-row .menu-text {
+    padding: 0;
+  }
+
+  .mu-restaurant-menu .small {
+    width: 25% !important;
+  }
+
+  .mu-restaurant-menu .big {
+    width: 50% !important;
+    font-size: 1em;
+  }
+
+  .menu-text .block {
+    width: 100% !important;
+    margin: 20px auto !important;
+    font-size: 1em;
+  }
+
+
 
   .navbar-default .navbar-toggle {
     border-radius: 0px;
     margin-top: 0;
+    margin-right: 0;
   }
 
   .navbar-default .navbar-toggle:hover,
@@ -1957,9 +2027,9 @@ RESERVATION SECTION
     padding-top: 30%;
   }
 
-  #mu-map {
+/*  #mu-map {
     height: 350px;
-  }
+  }*/
 
   #mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-restaurant-menu li {
     margin-bottom: 10px;
@@ -2051,9 +2121,9 @@ RESERVATION SECTION
 
   }
 
-  #mu-map {
+/*  #mu-map {
     height: 250px;
-  }
+  }*/
 
   .mu-contact-form .mu-send-btn {
     width: 100%;
@@ -2098,14 +2168,19 @@ padding: 0px;
 margin-bottom: 60px;
 }
 
+.contact-container {
+  width: 100%;
+  height: 100%;
+}
 
-.whyus-container, .menu-container, .mail-container {
+
+.whyus-container, .menu-container, .mail-container, .footer-container, .story-container, .process-container, .menupage-container, .mu-map, .contact-container {
   width: 1000px;
   padding: 0;
 }
 
 @media (max-width: 1220px) {
-  .whyus-container, .menu-container, .mail-container, .nav-container {
+  .whyus-container, .menu-container, .mail-container, .nav-container, .scrollToTopBox, .footer-container, .story-container, .process-container, .menupage-container, .mu-map, .contact-container {
     width: 90% !important;
   }
 }
@@ -2143,13 +2218,14 @@ margin-bottom: 60px;
   text-transform: uppercase;
   /*font-family: 'Concert One', cursive;*/
   letter-spacing: .05em;
+
 }
 
 
 .whyus-text .content {
   margin: 10px auto 30px auto;
   font-size: 1.125em;
-  font-weight: 200;
+  font-weight: 375;
 }
 
 .whyus-text button {
@@ -2159,25 +2235,52 @@ margin-bottom: 60px;
   border: 1px solid white;
   width: 100px;
   height: 40px;
+  font-weight: 375;
 }
 
 .whyus-text button:hover {
   background-color: white;
   color: #0accc7;
+  font-weight: 375;
 }
 
 
 @media (max-width: 768px) {
 
-  #mu-slider {
-    margin-top: 50px;
+  .footer-col {
+    padding: 0;
   }
+
+  .process-col {
+    padding: 0 !important;
+    margin-bottom: 20px;
+  }
+
+  .footer-col .description .left {
+    width: 20% !important;
+  }
+  .footer-col .description .right {
+    width: 80% !important;
+    text-align: left !important;
+  }
+
+  .mu-footer-social {
+    margin-top: 30px;
+    margin-bottom: -10px;
+    float: left !important;
+  }
+
+  .mu-footer-copyright {
+    text-align: left;
+  }
+
+
 
   #mu-slider, #whyus-section, #menu-section, #mail-section {
     margin-bottom: 50px !important;
   }
 
-  .whyus-text .block, .mail-form .form  {
+  .whyus-text .block, .mail-form .form {
     margin: 40px auto !important;
   }
   .mail-row .image {
@@ -2215,9 +2318,11 @@ margin-bottom: 60px;
 
 
 
-  .whyus-text .block, .mail-form .form  {
+  .whyus-text .block, .mail-form .form {
     width: 70% !important;
   }
+
+
 }
 
 
@@ -2314,22 +2419,30 @@ margin-bottom: 60px;
   color: white;
 }
 
-.mail-form .form, .whyus-text .block {
+.mail-form .form, .whyus-text .block{
   width: 60%;
   margin: 20% auto 0 auto;
 }
+
+.story-text .block {
+  width: 100%;
+  margin: 20px auto 0 auto;
+}
+
 
 .mail-form .form .title {
   font-size: 2em;
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: .05em;
 }
 
 .mail-form .form .sub-title {
   font-size: 1.125em;
-  font-weight: 200;
-  line-height: 90%;
-  margin: 10px 0 50px 0;
+  font-weight: 375;
+/*  line-height: 90%;
+*/  margin: 10px 0 50px 0;
+
 }
 
 .mail-form .form input {
@@ -2363,9 +2476,246 @@ margin-bottom: 60px;
   background-color: #0accc7;
   color: white;
   border: 1px solid white;
+  font-weight: 375;
 }
 
 #mail-submit:hover {
   background-color: white;
   color: #0accc7;
+  font-weight: 375;
+}
+
+
+
+/* Footer */
+
+
+.footer-row {
+  background-color: #0accc7;
+  color: white;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.footer-col-left {
+  padding-left: 0;
+}
+
+.footer-col-right {
+  padding-right: 0;
+}
+
+
+.footer-col .title {
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.footer-col .description {
+  font-size: 1em;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.footer-col .description .left {
+  display: inline-block;
+  width: 50%;
+}
+
+.footer-col .description .right {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+  float: right;
+}
+
+.footer-col .mu-footer-copyright {
+  font-size: 1em;
+}
+
+/* Story & process */
+
+.story-row{
+  color: black;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: white;
+}
+
+.process-row {
+  color: black;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: #0accc7;
+}
+
+.process-row {
+  background-color: white;
+}
+
+#story-section {
+  width: 100%;
+  position: relative;
+  display: flex;
+  padding: 0px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+
+.story-row img {
+  width: 100%;
+}
+
+.story-row .img-col {
+  padding: 0;
+}
+
+
+.story-text {
+  text-align: left;
+  color: black;
+  padding: 0;
+}
+
+.story-text .title {
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  /*font-family: 'Concert One', cursive;*/
+  letter-spacing: .05em;
+}
+
+
+.story-text .content {
+  margin: 10px auto 30px auto;
+  font-size: 1.125em;
+  font-weight: 400;
+  color: rgba(0,0,0, .5) !important;
+}
+
+#process-section {
+width: 100%;
+position: relative;
+display: flex;
+padding: 0px;
+margin-bottom: 60px;
+}
+
+.process-col img {
+  width: 100%;
+}
+
+
+
+.process-col-left {
+  padding-left: 0px;
+  padding-right: 10px;
+}
+
+.process-col-center {
+  padding: 0px 5px;
+}
+
+.process-col-right {
+  padding-left: 10px;
+  padding-right: 0px;
+}
+
+
+.process-col .text .title {
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  /*font-family: 'Concert One', cursive;*/
+  letter-spacing: .05em;
+}
+
+.process-col {
+  background-color: white;
+}
+
+.process-col .text {
+  color: white;
+  background-color: #0accc7;
+  padding: 40px;
+  width: 100%;
+}
+
+.process-col .text .content {
+  margin: 10px auto 30px auto;
+  font-size: 1.125em !important;
+  font-weight: 200;
+}
+
+.menu-slider-col {
+  padding: 0;
+}
+
+.menu-text .block {
+  width: 80%;
+  margin: 0 auto 0 auto;
+}
+
+
+
+.menupage-row {
+  background-color: white;
+  color: black;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.menupage-row .menu-text .title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#snowflake-section {
+width: 100%;
+position: relative;
+display: flex;
+padding: 0px;
+margin-bottom: 60px;
+margin-top: 120px;
+}
+
+
+.menupage-row .menu-text .tea-block .item {
+  margin-bottom: 15px;
+}
+
+.menupage-row .menu-text .item {
+  width: 100%;
+  font-size: 1.125em;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  line-height: 90%;
+}
+
+.menupage-row .menu-text .item .name{
+  display: inline-block;
+  width: 100%;
+  float: left;
+}
+
+.menupage-row .menu-text .item .price {
+  display: inline-block;
+  font-size: 1em !important;
+  font-weight: 300;
+  color: #0accc7;
+}
+
+.menupage-row .menu-text .item .description {
+  font-weight: 300;
+  font-style: italic;
+  font-size: .831em;
+  color: rgba(0,0,0,1);
 }
