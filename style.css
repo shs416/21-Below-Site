@@ -1681,7 +1681,7 @@ RESERVATION SECTION
   background-color: #0accc7;
   display: inline;
   float: left;
-  padding: 50px 0;
+  padding: 35px 0;
   width: 100%;
   margin-top: 60px;
 }
@@ -1885,6 +1885,13 @@ RESERVATION SECTION
     border-right: none;
   }
 
+  .footer-col .description .left {
+    width: 40% !important;
+  }
+
+ .footer-col .description .right {
+    width: 60% !important;
+  }
 
 }
 
@@ -2224,13 +2231,7 @@ margin-bottom: 60px;
     margin-bottom: 20px;
   }
 
-  .footer-col .description .left {
-    width: 20% !important;
-  }
-  .footer-col .description .right {
-    width: 80% !important;
-    text-align: left !important;
-  }
+
 
   .mu-footer-social {
     margin-top: 30px;
@@ -2407,7 +2408,6 @@ margin-bottom: 60px;
 .mail-form .form .sub-title {
   font-size: 1.125em;
   font-weight: 200;
-  line-height: 90%;
   margin: 10px 0 50px 0;
 }
 
@@ -2473,24 +2473,24 @@ margin-bottom: 60px;
 
 .footer-col .title {
   font-weight: 700;
-  font-size: 1em;
+  font-size: 1.125em;
 }
 
 .footer-col .description {
-  font-size: 1em;
+  font-size: 1.125em;
   font-weight: 200;
   margin-bottom: 20px;
 }
 
 .footer-col .description .left {
   display: inline-block;
-  width: 50%;
+  width: 60%;
 }
 
 .footer-col .description .right {
   display: inline-block;
-  width: 50%;
-  text-align: right;
+  width: 40%;
+  text-align: left;
   float: right;
 }
 
