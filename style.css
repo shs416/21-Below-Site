@@ -90,7 +90,7 @@ width: 55px;
  
 height: 55px;
  
-z-index: 100;
+z-index: 10000;
  
 display: none;
  
@@ -2443,6 +2443,9 @@ margin-bottom: 60px;
 
 }
 
+.process{
+  font-size: 0;
+}
 
 .whyus-text .content {
   margin: 10px auto 30px auto;
@@ -2779,8 +2782,8 @@ margin-bottom: 60px;
   position: relative;
   display: flex;
   padding: 0px;
-  margin-top: 120px;
-  margin-bottom: 120px;
+  margin-top: 100px;
+  margin-bottom: 20px;
 }
 
 
@@ -2812,7 +2815,8 @@ margin-bottom: 60px;
   margin: 10px auto 30px auto;
   font-size: 1.125em;
   font-weight: 400;
-  color: rgba(0,0,0, .5) !important;
+  color: black;!important;
+  margin-bottom: 8px;
 }
 
 #process-section {
