@@ -35,11 +35,10 @@
     font-family: 'Josefin Sans', sans-serif;
 */
 
-#snowpic:hover {
+/*#snowpic:hover {
   opacity: 0.7;
 
-/*background: rgba(0,0,0,0.5);
-*/}
+}*/
 
 #contacttext {
   font-size: 1.5em;
@@ -65,8 +64,29 @@
 
 }
 
-.imgg {
+#hours {
+  float: right;
+}
+
+.storepic {
   max-width: 100%;
+/*  padding-top: 30px;
+*/  height: 400px;
+  padding-right: 20px;
+  margin-top: 20px;
+}
+
+.snowicon {
+  max-width: 100%;
+}
+
+.panel-group {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.panel-title {
+  font-weight: bold;
 }
 
 body {
@@ -224,8 +244,8 @@ img {
 ====================*/
 .mu-main-navbar {
   background-color: transparent;
-  border: none;
-  padding: 20px 0;
+/*  border: none;
+*/  padding: 20px 0;
   border-radius: 0;
   margin-bottom: 0;
   -webkit-transition: all 0.5s;
@@ -354,7 +374,7 @@ img {
   position: fixed;
   width: 1000px;
   margin: 0 auto;
-  bottom: 80px;
+  bottom: 140px;
   height: 40px;
   left: 50%; transform: translate(-50%,0);
   z-index: 966;
@@ -367,7 +387,7 @@ img {
   font-size: 30px;
   line-height: 50px;
   position: fixed;
-  right: 0;
+  right: -60px;
   text-align: center;
   text-decoration: none;
   width: 55px;
@@ -397,7 +417,7 @@ img {
 #mu-slider{
   display: inline;
   float: left;
-  margin-top: 120px;
+  margin-top: 100px;
   width: 100%;
   position: relative;
   margin-bottom: 60px;
@@ -425,7 +445,7 @@ img {
 
 @media (max-width: 1020px) {
   #mu-slider {
-    margin-top: 120px;
+    margin-top: 100px;
   }
 }
 
@@ -845,13 +865,13 @@ img {
   background-color: red;
   padding: 0;
   margin: 0;
-  height: 40px;
+  height: 45px;
 
 }
 
 .mu-restaurant-menu li a {
   height: 100%;
-    font-size: 1em !important;
+    font-size: 1.125 !important;
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 0;
@@ -1598,20 +1618,22 @@ RESERVATION SECTION
 .mu-contact-right {
   display: inline;
   float: left;
-  padding: 0 30px;
-  width: 100%;
-}
+/*  padding: 0 50px;
+*/  width: 100%;
+/*  padding-left: 50px;
+*/}
 
 .mu-contact-right .mu-contact-widget {
   display: inline;
   float: left;
-  margin-bottom: 25px;
-  width: 100%;
+/*  margin-bottom: 10px;
+*/  width: 100%;
+  margin-top: 20px;
 }
 
 .mu-contact-right .mu-contact-widget h3 {
   margin-top: 0px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   display: inline-block;
 }
 
@@ -1637,8 +1659,8 @@ RESERVATION SECTION
 
 .mu-contact-right .mu-contact-widget address p span {
   display: inline-block;
-  margin-right: 20px;
-  min-width: 130px;
+/*  margin-right: 20px;
+*/  min-width: 130px;
 }
 
 #form-messages {
@@ -1679,8 +1701,8 @@ RESERVATION SECTION
 /*  float: left;
 */  height: 500px;
   width: 1000px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1709,10 +1731,10 @@ RESERVATION SECTION
   background-color: #0accc7;
   display: inline;
   float: left;
-  padding: 50px 0;
+  padding: 35px 0;
   width: 100%;
-  margin-top: 60px;
-}
+/*  margin-top: 60px;
+*/}
 
 .mu-footer-area {
   display: inline;
@@ -1913,6 +1935,13 @@ RESERVATION SECTION
     border-right: none;
   }
 
+  .footer-col .description .left {
+    width: 40% !important;
+  }
+
+ .footer-col .description .right {
+    width: 60% !important;
+  }
 
 }
 
@@ -2035,7 +2064,25 @@ RESERVATION SECTION
     margin-bottom: 10px;
   }
 
+  .storepic {
+    height: 250px;
+    padding-top: 0px;
+    padding-right: 0px;
+    margin-top: 0px;
+  }
 
+  .location-title {
+    padding-top: 30px;
+  }
+
+  .mu-map {
+    height: 350px;
+  }
+
+  .mu-main-navbar {
+/*    border: slategrey !important;
+*/    padding-bottom: 0px;
+  }
 }
 
 @media (max-width: 360px) {
@@ -2121,14 +2168,29 @@ RESERVATION SECTION
 
   }
 
-/*  #mu-map {
-    height: 250px;
-  }*/
-
   .mu-contact-form .mu-send-btn {
     width: 100%;
   }
 
+ .storepic {
+    height: 200px;
+    padding-top: 0px;
+    padding-right: 0px;
+    margin-top: 0px;
+ }
+
+  .location-title {
+    padding-top: 30px;
+  }
+
+  .mu-map {
+    height: 350px;
+  }  
+
+  .mu-main-navbar {
+/*    border: slategrey !important;
+*/    padding-bottom: 0px;
+  }  
 }
 
 
@@ -2138,7 +2200,26 @@ RESERVATION SECTION
     padding-top: 25.5%;
   }
 
+  .storepic {
+    height: 250;
+    padding-top: 0px;
+    padding-right: 0px;
+    margin-top: 0px;
 
+  }
+
+  .location-title {
+    padding-top: 30px;
+  }
+
+  .mu-map {
+    height: 350px;
+  }
+
+  .mu-main-navbar {
+/*    border: slategrey !important;
+*/    padding-bottom: 0px;
+  }
 }
 
 
@@ -2146,12 +2227,12 @@ RESERVATION SECTION
 /* This is where raymond worked */
 .page-container {
   margin-top: 100px;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 @media (max-width: 991.98px) {
   .page-container {
-    margin-top: 120px;
-  }
+/*    margin-top: 120px;
+*/  }
 }
 
 .mb-3 {
@@ -2174,14 +2255,18 @@ margin-bottom: 60px;
 }
 
 
-.whyus-container, .menu-container, .mail-container, .footer-container, .story-container, .process-container, .menupage-container, .mu-map, .contact-container {
+.panel-group, .whyus-container, .menu-container, .mail-container, .footer-container, .story-container, .process-container, .menupage-container, .mu-map, .contact-container {
   width: 1000px;
   padding: 0;
 }
 
 @media (max-width: 1220px) {
-  .whyus-container, .menu-container, .mail-container, .nav-container, .scrollToTopBox, .footer-container, .story-container, .process-container, .menupage-container, .mu-map, .contact-container {
+  .panel-group, .whyus-container, .menu-container, .mail-container, .nav-container, .scrollToTopBox, .footer-container, .story-container, .process-container, .menupage-container, .mu-map, .contact-container {
     width: 90% !important;
+  }
+
+  .scrollToTop {
+    right: 0;
   }
 }
 
@@ -2256,13 +2341,7 @@ margin-bottom: 60px;
     margin-bottom: 20px;
   }
 
-  .footer-col .description .left {
-    width: 20% !important;
-  }
-  .footer-col .description .right {
-    width: 80% !important;
-    text-align: left !important;
-  }
+
 
   .mu-footer-social {
     margin-top: 30px;
@@ -2434,8 +2513,8 @@ margin-bottom: 60px;
   font-size: 2em;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: .05em;
-}
+/*  letter-spacing: .05em;
+*/}
 
 .mail-form .form .sub-title {
   font-size: 1.125em;
@@ -2509,24 +2588,24 @@ margin-bottom: 60px;
 
 .footer-col .title {
   font-weight: 700;
-  font-size: 1em;
+  font-size: 1.125em;
 }
 
 .footer-col .description {
-  font-size: 1em;
+  font-size: 1.125em;
   font-weight: 200;
   margin-bottom: 20px;
 }
 
 .footer-col .description .left {
   display: inline-block;
-  width: 50%;
+  width: 60%;
 }
 
 .footer-col .description .right {
   display: inline-block;
-  width: 50%;
-  text-align: right;
+  width: 40%;
+  text-align: left;
   float: right;
 }
 
@@ -2656,8 +2735,13 @@ margin-bottom: 60px;
 }
 
 .menu-text .block {
-  width: 80%;
+  display: block;
   margin: 0 auto 0 auto;
+}
+
+.menu-text {
+  padding-right: 0;
+  padding-left: 30px;
 }
 
 
@@ -2683,7 +2767,7 @@ position: relative;
 display: flex;
 padding: 0px;
 margin-bottom: 60px;
-margin-top: 120px;
+margin-top: 75px;
 }
 
 
@@ -2691,29 +2775,70 @@ margin-top: 120px;
   margin-bottom: 15px;
 }
 
+.menupage-row .menu-text .tea-block {
+}
+
+.sepmilk {
+  text-align: left !important;
+  margin-top: 0px;
+  font-size: 1.125em;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block !important;
+  width: 100% !important;
+  line-height: 170%;
+  height: 30px;
+}
+
+.menupage-row .menu-text .tea-block .sep {
+  text-align: left !important;
+  font-size: 1.125em;
+/*  margin: 0;
+  padding: 0;*/
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block !important;
+  width: 100% !important;
+  line-height: 170%;
+  height: 30px;
+}
+
+.menupage-row .menu-text .tea-block .item .name {
+  font-weight: 300;
+}
+
 .menupage-row .menu-text .item {
   width: 100%;
   font-size: 1.125em;
   font-weight: 700;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
   line-height: 90%;
 }
 
 .menupage-row .menu-text .item .name{
   display: inline-block;
-  width: 100%;
+  width: 80%;
   float: left;
-}
+  line-height: 170%;
+/*  text-transform: uppercase;
+*/}
 
 .menupage-row .menu-text .item .price {
   display: inline-block;
   font-size: 1em !important;
-  font-weight: 300;
+  font-weight: 700;
+  width: 20%;
+  text-align: right;
+  float: right;
   color: #0accc7;
+  line-height: 140%;
 }
 
 .menupage-row .menu-text .item .description {
+  display: inline-block;
+  width: 100%;
   font-weight: 300;
   font-style: italic;
   font-size: .831em;
