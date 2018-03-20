@@ -40,7 +40,28 @@
 
 }
 
-  .desktop {display: block;}
+.mu-title .mu-subtitle {
+  display: none;
+}
+
+.mu-title .mu-faq {
+  display: none;
+}
+
+
+.mu-title .mu-menu {
+  display: none;
+}
+
+.mu-title {
+  display: none !important;
+}
+
+.mu-title1 {
+  display: none !important;
+}
+  .desktop {display: block;
+    padding-bottom: 40px;}
   .mobile {display: none; }
 
 /*.scrollToTopBox {
@@ -755,7 +776,19 @@ img {
 */  text-align: center;
   padding-bottom: 40px;
   padding-top: 1%;
-}
+/*padding-top: 30px;
+*/}
+
+.mu-title1 {
+  display: inherit;
+/*  float: left;
+*/  width: 100%;
+/*  margin-bottom: 20px;
+*/  text-align: center;
+/*  padding-bottom: 40px;
+*/  padding-top: 1%;
+/*padding-top: 30px;
+*/}
 
 .mu-title .mu-subtitle {
   font-size: 2.5em;
@@ -770,15 +803,40 @@ img {
   margin-bottom: 5px;
 }
 
+.mu-title1 h2 {
+  color: #000;
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+
 .mu-faq {
   font-size: 2.5em;
   line-height: 30px;
   font-family: 'Concert One', cursive;
 }
 
-.mu-menu {
-  padding-top: 2%;
+.mu-title .mu-menu {
+  font-size: 2.5em;
+  line-height: 30px;
+  font-family: 'Concert One', cursive;
+  color: #0accc7;
+  text-transform: uppercase;
+  padding-bottom: 0px !important;
+  padding-top: 30px;
 }
+
+.mu-title1 .mu-menu {
+  font-size: 2.5em;
+  line-height: 30px;
+  font-family: 'Concert One', cursive;
+  color: #0accc7;
+  text-transform: uppercase;
+  padding-bottom: 0px !important;
+  padding-top: 30px;
+}
+/*.mu-menu {
+  padding-top: 2%;
+}*/
 
 /*==================
  COUNTER SECTION
@@ -2087,6 +2145,30 @@ RESERVATION SECTION
 
 @media (max-width: 480px) {
 
+.mu-menu {
+  padding-bottom: 0px !important;
+}
+.mu-title .mu-subtitle{
+  display: block;
+}
+
+.mu-title .mu-faq {
+  display: block;
+}
+
+.mu-title1 .mu-menu {
+  display: block;
+  padding-bottom: 0px !important;
+}
+
+.mu-title {
+  display: block !important;
+
+}
+.mu-title1 {
+  display: block !important;
+
+}
   .desktop {display: none;}
   .mobile {display: block; }
 
@@ -2122,6 +2204,9 @@ RESERVATION SECTION
 
 
   .mu-title {
+    margin-bottom: 0;
+  }
+    .mu-title1 {
     margin-bottom: 0;
   }
 
@@ -2181,7 +2266,30 @@ RESERVATION SECTION
 }
 
 @media (max-width: 360px) {
+.mu-menu {
+  padding-bottom: 0px !important;
+}
 
+.mu-title .mu-subtitle  {
+  display: block;
+}
+.mu-title .mu-faq {
+  display: block;
+}
+
+.mu-title1 .mu-menu {
+  display: block;
+  padding-bottom: 0px !important;
+}
+
+.mu-title1 {
+  display: block !important;
+
+}
+.mu-title {
+  display: block !important;
+
+}
   .desktop {display: none;}
   .mobile {display: block; }
 
@@ -2238,6 +2346,9 @@ RESERVATION SECTION
     font-size: 28px;
   }
 
+  .mu-title2 h2 {
+    font-size: 28px;
+  }
   #mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider li .mu-testimonial-single .mu-testimonial-info p {
     font-size: 16px;
     line-height: 24px;
@@ -2311,7 +2422,28 @@ RESERVATION SECTION
 
 
 @media (max-width: 320px) {
+.mu-menu {
+  padding-bottom: 0px !important;
+}
 
+.mu-title .mu-subtitle {
+  display: block;
+}
+.mu-title .mu-faq {
+  display: block;
+}
+
+.mu-title1 .mu-menu {
+  display: block;
+  padding-bottom: 0px !important;
+}
+.mu-title1 {
+  display: block !important;
+
+}
+.mu-title {
+  display: block !important;
+}
   .desktop {display: none;}
   .mobile {display: block; }
 
