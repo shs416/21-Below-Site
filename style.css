@@ -133,10 +133,16 @@ text-decoration: none;
 
 .storepic {
   max-width: 100%;
+  width: 100%;
 /*  padding-top: 30px;
-*/  height: 400px;
-  padding-right: 20px;
+*/  height: 335px;
+  padding-right: 15px;
   margin-top: 20px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 7px !important;
 }
 
 .snowicon {
@@ -1697,8 +1703,8 @@ RESERVATION SECTION
 
 .mu-contact-right .mu-contact-widget h3 {
   margin-top: 0px;
-  padding-bottom: 5px;
-  display: inline-block;
+/*  padding-bottom: 5px;
+*/  display: inline-block;
 }
 
 .mu-contact-right .mu-contact-widget > p {
@@ -1707,8 +1713,8 @@ RESERVATION SECTION
 }
 
 .mu-contact-right .mu-contact-widget address {
-  margin-top: 10px;
-}
+/*  margin-top: 10px;
+*/}
 
 .mu-contact-right .mu-contact-widget address p {
   letter-spacing: 0.5px;
@@ -1765,7 +1771,7 @@ RESERVATION SECTION
 /*  float: left;
 */  height: 500px;
   width: 1000px;
-  padding-top: 30px !important;
+  padding-top: 40px !important;
   padding-bottom: 30px !important;
   margin-left: auto;
   margin-right: auto;
@@ -2154,8 +2160,8 @@ RESERVATION SECTION
   }
 
   .location-title {
-    padding-top: 30px;
-  }
+/*    padding-top: 30px;
+*/  }
 
   .mu-map {
     height: 350px;
@@ -2280,8 +2286,8 @@ RESERVATION SECTION
  }
 
   .location-title {
-    padding-top: 30px;
-  }
+/*    padding-top: 30px;
+*/  }
 
   .mu-map {
     height: 350px;
