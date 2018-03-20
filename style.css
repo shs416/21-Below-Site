@@ -40,6 +40,9 @@
 
 }
 
+  .desktop {display: block;}
+  .mobile {display: none; }
+
 /*.scrollToTopBox {
   position: fixed;
   width: 1000px;
@@ -2083,6 +2086,10 @@ RESERVATION SECTION
 
 
 @media (max-width: 480px) {
+
+  .desktop {display: none;}
+  .mobile {display: block; }
+
 .mu-restaurant-menu li a {
   height: 40px;
     font-size: 1.125 !important;
@@ -2174,6 +2181,9 @@ RESERVATION SECTION
 }
 
 @media (max-width: 360px) {
+
+  .desktop {display: none;}
+  .mobile {display: block; }
 
 .mu-restaurant-menu li a {
   height: 35px;
@@ -2301,6 +2311,9 @@ RESERVATION SECTION
 
 
 @media (max-width: 320px) {
+
+  .desktop {display: none;}
+  .mobile {display: block; }
 
 .mu-restaurant-menu li a {
   height: 30px;
