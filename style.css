@@ -35,11 +35,73 @@
     font-family: 'Josefin Sans', sans-serif;
 */
 
-/*#snowpic:hover {
-  opacity: 0.7;
+#snowpic:hover {
+  opacity: 0.8;
 
+}
+
+/*.scrollToTopBox {
+  position: fixed;
+  width: 1000px;
+  margin: 0 auto;
+  bottom: 140px;
+  height: 40px;
+  left: 50%; transform: translate(-50%,0);
+  z-index: 966;
+}
+
+.scrollToTop {
+  bottom: 60px;
+  color: white;
+  display: none;
+  font-size: 30px;
+  line-height: 50px;
+  position: fixed;
+  right: -60px;
+  text-align: center;
+  text-decoration: none;
+  width: 55px;
+  z-index: 999 !important;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  height: 55px;
+  border-radius: 50%;
+  border-color: #6f6f6f;
+  background-color: #6f6f6f;
 }*/
 
+.scrollToTop { 
+ 
+margin: 0;
+ 
+position: fixed;
+ 
+bottom: 10px;
+ 
+right: 10px;
+ 
+width: 55px;
+ 
+height: 55px;
+ 
+z-index: 100;
+ 
+display: none;
+ 
+text-decoration: none;
+ 
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  color: white; 
+  border-color: none;
+  background-color: #6f6f6f;
+  font-size: 30px;
+ 
+} 
 #contacttext {
   font-size: 1.5em;
   font-weight: 700;
@@ -49,6 +111,7 @@
 
 .text {
   position: relative;
+  z-index: 1000;
 }
 
 #icon {
@@ -370,7 +433,7 @@ img {
 
 /*scrol to top*/
 
-.scrollToTopBox {
+/*.scrollToTopBox {
   position: fixed;
   width: 1000px;
   margin: 0 auto;
@@ -401,7 +464,7 @@ img {
   border-radius: 50%;
   border-color: #6f6f6f;
   background-color: #6f6f6f;
-}
+}*/
 
 
 .scrollToTop:hover,
@@ -861,11 +924,12 @@ img {
 .mu-restaurant-menu li {
   display: inline-block;
   float: left;
-  width: 33.333%;
+/*  width: 33.333%;
   background-color: red;
-  padding: 0;
+*/  padding: 0;
   margin: 0;
   height: 45px;
+  width: 33.33%;
 
 }
 
@@ -1892,8 +1956,9 @@ RESERVATION SECTION
   }
 
   .mu-restaurant-menu .small {
-    width: 25% !important;
-  }
+    width: 33.33% !important;
+/*    width: 25% !important;
+*/  }
 
   .mu-restaurant-menu .big {
     width: 50% !important;
@@ -2012,6 +2077,23 @@ RESERVATION SECTION
 
 
 @media (max-width: 480px) {
+.mu-restaurant-menu li a {
+  height: 40px;
+    font-size: 1.125 !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 0;
+  color: #0accc7;
+  background-color: white;
+  border-color: #0accc7;
+  font-size: 13px;
+  margin: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}  
 
   .mu-top-slider .mu-top-slider-single .mu-top-slider-content {
    top: 20%;
@@ -2086,6 +2168,24 @@ RESERVATION SECTION
 }
 
 @media (max-width: 360px) {
+
+.mu-restaurant-menu li a {
+  height: 35px;
+    font-size: 1.125 !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 0;
+  color: #0accc7;
+  background-color: white;
+  border-color: #0accc7;
+  font-size: 12px;
+  margin: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}  
 
   #mu-slider .mu-slider-area .mu-top-slider .mu-top-slider-single .mu-top-slider-content .mu-slider-title {
     font-size: 22px;
@@ -2196,6 +2296,24 @@ RESERVATION SECTION
 
 @media (max-width: 320px) {
 
+.mu-restaurant-menu li a {
+  height: 30px;
+    font-size: 1.125 !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 0;
+  color: #0accc7;
+  background-color: white;
+  border-color: #0accc7;
+  font-size: 11px;
+  margin: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}  
+
   #mu-gallery .mu-gallery-area .mu-gallery-content .mu-gallery-body .mu-single-gallery .mu-single-gallery-item .mu-single-gallery-info {
     padding-top: 25.5%;
   }
@@ -2265,9 +2383,9 @@ margin-bottom: 60px;
     width: 90% !important;
   }
 
-  .scrollToTop {
+/*  .scrollToTop {
     right: 0;
-  }
+  }*/
 }
 
 .whyus-row {
@@ -2468,7 +2586,8 @@ margin-bottom: 60px;
 
 .menu-row .image .text u {
   text-decoration: none;
-  background-color: rgba(0,0,0,.5);
+/*  border-bottom: 2px solid white;
+*/  background-color: rgba(0,0,0,.75);
   padding: 4px;
 }
 
@@ -2511,7 +2630,7 @@ margin-bottom: 60px;
 
 
 .mail-form .form .title {
-  font-size: 2em;
+  font-size: 1.9em;
   font-weight: 700;
   text-transform: uppercase;
 /*  letter-spacing: .05em;
@@ -2822,7 +2941,7 @@ margin-top: 75px;
   display: inline-block;
   width: 80%;
   float: left;
-  line-height: 170%;
+  line-height: 120%;
 /*  text-transform: uppercase;
 */}
 
@@ -2834,14 +2953,14 @@ margin-top: 75px;
   text-align: right;
   float: right;
   color: #0accc7;
-  line-height: 170%;
+  line-height: 120%;
 }
 
 .menupage-row .menu-text .item .description {
   display: inline-block;
-  width: 100%;
+  width: 80%;
   font-weight: 300;
-  font-style: italic;
-  font-size: .831em;
+/*  font-style: italic;
+*/  font-size: .831em;
   color: rgba(0,0,0,1);
 }

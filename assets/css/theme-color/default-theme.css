@@ -6,8 +6,8 @@ Author URI : http://www.markups.io/
 
 .scrollToTop {
   background-color: black;
-  border: 2px solid black;
-}
+/*  border: 2px solid black;
+*/}
 
 #active a {
   color:#0ACCC7;
